@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "same_algorithm_from_original_initial_state": true,
+  "independent_model_validation": false,
+  "finish_time_s": 183913.49853515625,
+  "maximum_differences": {
+    "final_T": 0.0,
+    "final_C": 0.0,
+    "radius_m": 0.0,
+    "surface_temperature_K": 0.0,
+    "surface_moisture": 0.0,
+    "max_C": 0.0,
+    "max_r": 0.0,
+    "water_balance": 5.773159728050814e-15,
+    "loss_cumulative": 0.0,
+    "temperature_K": 5.684341886080802e-14,
+    "moisture": 8.881784197001252e-16
+  },
+  "excel_rows_including_header": 3066,
+  "excel_values_and_blanks_identical": true,
+  "source_hashes": {
+    "paper_appendix_minimal/minimal_solver.py": "5d71f167f34a16836be988d7bea5ecb7a449b44694c54888c075a028454cf2f4",
+    "paper_appendix_minimal/minimal_q4.py": "9540aa278779fb4a1f1bd07536372f47f17be6a61e30a89a49c0db461471477e",
+    "paper_appendix_minimal/reproduced/q4/q4_independent.npz": "d1ffee71b3a4858fb6f3ac94643f961580cd938ff3169f405f2ca51e9673507d",
+    "paper_appendix_minimal/reproduced/q4/result4.xlsx": "e1351a3901226b38d6126bcf670b92b95e0080c90070f74314c74ab796280cb1",
+    "data/attachment1.xlsx": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+    "data/attachment2.xlsx": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+    "q4/solution.npz": "33f1192de2ea75440667f2c616b7134c388f0829c62673fb94f59b0ae8dd6ce2",
+    "submission_results/result4.xlsx": "320312faa01c3cc5b3aeca7974f2a6dcfb56b15dfd47ff3e492e932fa4da6ec7"
+  }
+}

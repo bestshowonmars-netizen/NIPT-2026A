@@ -1,0 +1,484 @@
+{
+  "matrix": "time",
+  "predeclared_limits": {
+    "field_C": 2e-05,
+    "endpoint_s": 0.1,
+    "event_s": 0.02,
+    "restart": 1e-12,
+    "water": 1e-08
+  },
+  "runs": [
+    {
+      "cells": 960,
+      "dt": 1.0,
+      "startup": 768.0,
+      "event_dt": 0.05,
+      "event_tol": 0.01,
+      "shrinking": true,
+      "tight": false,
+      "label": "q4_N960_dt1_startup768_shrinking_evdt0.05_tol0.01",
+      "path": "q4\\runs\\q4_N960_dt1_startup768_shrinking_evdt0.05_tol0.01.npz",
+      "sha256": "97a7c3638c878db947336a7f587d497285bfca0c8103fb188935d79697b9d106",
+      "requested_event_dt": 0.05,
+      "config": {
+        "cells": 960,
+        "dt_max": 1.0,
+        "dt_scale": 0.0013020833333333333,
+        "time_growth": 600.0,
+        "event_dt": 0.05,
+        "epsilon_t": 0.01,
+        "shrinking": true,
+        "atol": 1e-10,
+        "rtol": 1e-11
+      },
+      "finish_time_s": 183915.8203125,
+      "checks": {
+        "passed": true,
+        "completed": true,
+        "field_domains": {
+          "passed": true,
+          "physical_in_domain_values": 195792,
+          "physical_outside_values": 113975,
+          "reference_values_per_field": 309767,
+          "radius_1_198_cm_excludes_1_2_cm": true,
+          "surface_is_separate_and_matches_xi_1": true
+        },
+        "maximum_water_balance_residual": 1.312727704316785e-12,
+        "endpoint_full_state_checks": {
+          "minus": {
+            "center_T": 323.1499999999993,
+            "center_C": 0.15000000214250025,
+            "surface_T": 323.14999999999947,
+            "surface_C": 0.05262003315039374,
+            "max_C": 0.15000000214250025,
+            "max_r": 0.0,
+            "reintegrated_state_max_difference": 0.0,
+            "reintegrated_loss_difference": 0.0
+          },
+          "plus": {
+            "center_T": 323.1499999999993,
+            "center_C": 0.14999999838149664,
+            "surface_T": 323.14999999999947,
+            "surface_C": 0.05262003291795225,
+            "max_C": 0.14999999838149664,
+            "max_r": 0.0,
+            "reintegrated_state_max_difference": 0.0,
+            "reintegrated_loss_difference": 0.0
+          }
+        },
+        "source_hashes_verified": {
+          "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\data\\attachment1.xlsx": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+          "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\data\\attachment2.xlsx": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+          "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\common\\solver.py": "c530db8008cfe4cd4a973f520bed46f00ee9e33cf3c782cb66a887318608f3ef",
+          "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\common\\finite_volume.py": "a26f1558d996008261979f55eeb4e38ba84f57fc5c90a990cb09715823bb718b",
+          "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\common\\material_properties.py": "8ae076610b5af73c7fe25fd78fb0d57f16c946c3661838de1c514b577689f691",
+          "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\common\\boundary_conditions.py": "c04a1674abdbe508b4820e149f782ecce1d856a0d11e1a7f0d785aa373ddd24a",
+          "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\common\\interpolation.py": "1bcc685388ace0ae78a92d672ec4b7f23f7c849bcc4ce90802dde048fc13a76d",
+          "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\common\\data_loader.py": "fd8fbd7ca01e02b3dfaf3fae6ee4fa8a59185399e8e330717e01a64f8888d564",
+          "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\q4\\config.py": "01f33c43d9ab8fdaac830c546f064599686a4f0c6d5c746ab668f12662d98434",
+          "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\q4\\kernel.py": "d648f1434107cf1af4683397714366c8d93a9ac1722e704d0db9aac61863174f",
+          "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\q4\\shrinking_radius.py": "10f3e801544885cd8853020d2645a4663124d55b66074d45d0f43be8f90824a5",
+          "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\q4\\end_time_detector.py": "d9b68e33714259d31729925a2c0145514cc9b2e2f3f59b13de118f33a1f066b7",
+          "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\q4\\solve_q4.py": "fd8bcb3ae8539e24fbb2e53de37e94bc770cee401f6a7fa6e86441cee271c3ad"
+        },
+        "initial_state_solved_from_zero": true,
+        "fixed_reference_weights": true,
+        "event_parent_check": null,
+        "interpretation": "Numerical invariants and original-input consistency; not measured internal-field validation"
+      },
+      "elapsed_this_call_s": 0.8913826000061817
+    },
+    {
+      "cells": 960,
+      "dt": 0.5,
+      "startup": 768.0,
+      "event_dt": 0.05,
+      "event_tol": 0.01,
+      "shrinking": true,
+      "tight": false,
+      "label": "q4_N960_dt0.5_startup768_shrinking_evdt0.05_tol0.01",
+      "path": "q4\\runs\\q4_N960_dt0.5_startup768_shrinking_evdt0.05_tol0.01.npz",
+      "sha256": "ccf443b2503a8a654ca7a216df367e06d736dbedbdd60c533dbb0eb356995386",
+      "requested_event_dt": 0.05,
+      "config": {
+        "cells": 960,
+        "dt_max": 0.5,
+        "dt_scale": 0.0013020833333333333,
+        "time_growth": 600.0,
+        "event_dt": 0.05,
+        "epsilon_t": 0.01,
+        "shrinking": true,
+        "atol": 1e-10,
+        "rtol": 1e-11
+      },
+      "finish_time_s": 183914.61181640625,
+      "checks": {
+        "passed": true,
+        "completed": true,
+        "field_domains": {
+          "passed": true,
+          "physical_in_domain_values": 195792,
+          "physical_outside_values": 113975,
+          "reference_values_per_field": 309767,
+          "radius_1_198_cm_excludes_1_2_cm": true,
+          "surface_is_separate_and_matches_xi_1": true
+        },
+        "maximum_water_balance_residual": 1.326494469822137e-12,
+        "endpoint_full_state_checks": {
+          "minus": {
+            "center_T": 323.1499999999983,
+            "center_C": 0.15000000234053082,
+            "surface_T": 323.149999999999,
+            "surface_C": 0.052620033394820284,
+            "max_C": 0.15000000234053082,
+            "max_r": 0.0,
+            "reintegrated_state_max_difference": 0.0,
+            "reintegrated_loss_difference": 0.0
+          },
+          "plus": {
+            "center_T": 323.1499999999983,
+            "center_C": 0.14999999857952712,
+            "surface_T": 323.149999999999,
+            "surface_C": 0.05262003316235136,
+            "max_C": 0.14999999857952712,
+            "max_r": 0.0,
+            "reintegrated_state_max_difference": 0.0,
+            "reintegrated_loss_difference": 0.0
+          }
+        },
+        "source_hashes_verified": {
+          "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\data\\attachment1.xlsx": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+          "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\data\\attachment2.xlsx": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+          "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\common\\solver.py": "c530db8008cfe4cd4a973f520bed46f00ee9e33cf3c782cb66a887318608f3ef",
+          "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\common\\finite_volume.py": "a26f1558d996008261979f55eeb4e38ba84f57fc5c90a990cb09715823bb718b",
+          "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\common\\material_properties.py": "8ae076610b5af73c7fe25fd78fb0d57f16c946c3661838de1c514b577689f691",
+          "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\common\\boundary_conditions.py": "c04a1674abdbe508b4820e149f782ecce1d856a0d11e1a7f0d785aa373ddd24a",
+          "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\common\\interpolation.py": "1bcc685388ace0ae78a92d672ec4b7f23f7c849bcc4ce90802dde048fc13a76d",
+          "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\common\\data_loader.py": "fd8fbd7ca01e02b3dfaf3fae6ee4fa8a59185399e8e330717e01a64f8888d564",
+          "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\q4\\config.py": "01f33c43d9ab8fdaac830c546f064599686a4f0c6d5c746ab668f12662d98434",
+          "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\q4\\kernel.py": "d648f1434107cf1af4683397714366c8d93a9ac1722e704d0db9aac61863174f",
+          "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\q4\\shrinking_radius.py": "10f3e801544885cd8853020d2645a4663124d55b66074d45d0f43be8f90824a5",
+          "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\q4\\end_time_detector.py": "d9b68e33714259d31729925a2c0145514cc9b2e2f3f59b13de118f33a1f066b7",
+          "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\q4\\solve_q4.py": "fd8bcb3ae8539e24fbb2e53de37e94bc770cee401f6a7fa6e86441cee271c3ad"
+        },
+        "initial_state_solved_from_zero": true,
+        "fixed_reference_weights": true,
+        "event_parent_check": null,
+        "interpretation": "Numerical invariants and original-input consistency; not measured internal-field validation"
+      },
+      "elapsed_this_call_s": 0.3967644999938784
+    },
+    {
+      "cells": 960,
+      "dt": 0.0625,
+      "startup": 768.0,
+      "event_dt": 0.05,
+      "event_tol": 0.01,
+      "shrinking": true,
+      "tight": false,
+      "label": "q4_N960_dt0.0625_startup768_shrinking_evdt0.05_tol0.01",
+      "path": "q4\\runs\\q4_N960_dt0.0625_startup768_shrinking_evdt0.05_tol0.01.npz",
+      "sha256": "1e7aac061ae55c44fdf397d344c07cd3136b49ceb71333745c212e8a8d9d32a6",
+      "requested_event_dt": 0.05,
+      "config": {
+        "cells": 960,
+        "dt_max": 0.0625,
+        "dt_scale": 0.0013020833333333333,
+        "time_growth": 600.0,
+        "event_dt": 0.05,
+        "epsilon_t": 0.01,
+        "shrinking": true,
+        "atol": 1e-10,
+        "rtol": 1e-11
+      },
+      "finish_time_s": 183913.54248046875,
+      "checks": {
+        "passed": true,
+        "completed": true,
+        "field_domains": {
+          "passed": true,
+          "physical_in_domain_values": 195792,
+          "physical_outside_values": 113975,
+          "reference_values_per_field": 309767,
+          "radius_1_198_cm_excludes_1_2_cm": true,
+          "surface_is_separate_and_matches_xi_1": true
+        },
+        "maximum_water_balance_residual": 1.3660184094987926e-12,
+        "endpoint_full_state_checks": {
+          "minus": {
+            "center_T": 323.14999999995456,
+            "center_C": 0.15000000160137297,
+            "surface_T": 323.1499999999773,
+            "surface_C": 0.05262003355179057,
+            "max_C": 0.15000000160137297,
+            "max_r": 0.0,
+            "reintegrated_state_max_difference": 0.0,
+            "reintegrated_loss_difference": 0.0
+          },
+          "plus": {
+            "center_T": 323.14999999995456,
+            "center_C": 0.14999999784037107,
+            "surface_T": 323.1499999999773,
+            "surface_C": 0.05262003331938537,
+            "max_C": 0.14999999784037107,
+            "max_r": 0.0,
+            "reintegrated_state_max_difference": 0.0,
+            "reintegrated_loss_difference": 0.0
+          }
+        },
+        "source_hashes_verified": {
+          "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\data\\attachment1.xlsx": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+          "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\data\\attachment2.xlsx": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+          "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\common\\solver.py": "c530db8008cfe4cd4a973f520bed46f00ee9e33cf3c782cb66a887318608f3ef",
+          "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\common\\finite_volume.py": "a26f1558d996008261979f55eeb4e38ba84f57fc5c90a990cb09715823bb718b",
+          "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\common\\material_properties.py": "8ae076610b5af73c7fe25fd78fb0d57f16c946c3661838de1c514b577689f691",
+          "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\common\\boundary_conditions.py": "c04a1674abdbe508b4820e149f782ecce1d856a0d11e1a7f0d785aa373ddd24a",
+          "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\common\\interpolation.py": "1bcc685388ace0ae78a92d672ec4b7f23f7c849bcc4ce90802dde048fc13a76d",
+          "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\common\\data_loader.py": "fd8fbd7ca01e02b3dfaf3fae6ee4fa8a59185399e8e330717e01a64f8888d564",
+          "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\q4\\config.py": "01f33c43d9ab8fdaac830c546f064599686a4f0c6d5c746ab668f12662d98434",
+          "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\q4\\kernel.py": "d648f1434107cf1af4683397714366c8d93a9ac1722e704d0db9aac61863174f",
+          "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\q4\\shrinking_radius.py": "10f3e801544885cd8853020d2645a4663124d55b66074d45d0f43be8f90824a5",
+          "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\q4\\end_time_detector.py": "d9b68e33714259d31729925a2c0145514cc9b2e2f3f59b13de118f33a1f066b7",
+          "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\q4\\solve_q4.py": "fd8bcb3ae8539e24fbb2e53de37e94bc770cee401f6a7fa6e86441cee271c3ad"
+        },
+        "initial_state_solved_from_zero": true,
+        "fixed_reference_weights": true,
+        "event_parent_check": null,
+        "interpretation": "Numerical invariants and original-input consistency; not measured internal-field validation"
+      },
+      "elapsed_this_call_s": 0.43688999999722
+    }
+  ],
+  "failed_runs": {},
+  "comparisons": [
+    {
+      "coarse": "q4_N960_dt1_startup768_shrinking_evdt0.05_tol0.01",
+      "fine": "q4_N960_dt0.5_startup768_shrinking_evdt0.05_tol0.01",
+      "kind": "time",
+      "comparison_times": 3066,
+      "comparison_radii": 21,
+      "comparison_reference_positions": 101,
+      "last_common_regular_time_s": 183900,
+      "interpolation_used": false,
+      "radius_histories_identical": true,
+      "physical_masks_identical": true,
+      "physical_inside_values": 41227,
+      "physical_outside_values": 23159,
+      "coarse_config": {
+        "cells": 960,
+        "dt_max": 1.0,
+        "dt_scale": 0.0013020833333333333,
+        "time_growth": 600.0,
+        "event_dt": 0.05,
+        "epsilon_t": 0.01,
+        "shrinking": true,
+        "atol": 1e-10,
+        "rtol": 1e-11
+      },
+      "fine_config": {
+        "cells": 960,
+        "dt_max": 0.5,
+        "dt_scale": 0.0013020833333333333,
+        "time_growth": 600.0,
+        "event_dt": 0.05,
+        "epsilon_t": 0.01,
+        "shrinking": true,
+        "atol": 1e-10,
+        "rtol": 1e-11
+      },
+      "case_paths": {
+        "coarse": "q4\\runs\\q4_N960_dt1_startup768_shrinking_evdt0.05_tol0.01.npz",
+        "fine": "q4\\runs\\q4_N960_dt0.5_startup768_shrinking_evdt0.05_tol0.01.npz"
+      },
+      "coarse_path": "q4\\runs\\q4_N960_dt1_startup768_shrinking_evdt0.05_tol0.01.npz",
+      "fine_path": "q4\\runs\\q4_N960_dt0.5_startup768_shrinking_evdt0.05_tol0.01.npz",
+      "time_step_ratio": 2.0,
+      "physical_C": {
+        "maximum": 7.66888980163749e-06,
+        "time_s": 37740.0,
+        "radius_cm": 0.0,
+        "values_compared": 41227
+      },
+      "reference_C": {
+        "maximum": 7.66888980163749e-06,
+        "time_s": 37740.0,
+        "xi": 0.0,
+        "values_compared": 309666
+      },
+      "surface_C": {
+        "maximum": 2.1512334814899337e-06,
+        "time_s": 36120.0,
+        "values_compared": 3066
+      },
+      "C": {
+        "maximum": 7.66888980163749e-06,
+        "maximum_by_view": {
+          "physical": 7.66888980163749e-06,
+          "reference": 7.66888980163749e-06,
+          "surface": 2.1512334814899337e-06,
+          "full_grid_maximum": 7.66888980163749e-06
+        }
+      },
+      "physical_T": {
+        "maximum": 9.950983786666256e-05,
+        "time_s": 14280.0,
+        "radius_cm": 1.4000000000000001,
+        "values_compared": 41227
+      },
+      "reference_T": {
+        "maximum": 9.953055217692963e-05,
+        "time_s": 14280.0,
+        "xi": 0.9400000000000001,
+        "values_compared": 309666
+      },
+      "surface_T": {
+        "maximum": 9.435497929644043e-05,
+        "time_s": 14280.0,
+        "values_compared": 3066
+      },
+      "T": {
+        "maximum": 9.953055217692963e-05,
+        "maximum_by_view": {
+          "physical": 9.950983786666256e-05,
+          "reference": 9.953055217692963e-05,
+          "surface": 9.435497929644043e-05
+        }
+      },
+      "full_grid_maximum_C": {
+        "maximum": 7.66888980163749e-06,
+        "time_s": 37740.0
+      },
+      "finish_time_s": {
+        "coarse": 183915.8203125,
+        "fine": 183914.61181640625,
+        "difference": 1.20849609375
+      },
+      "at_own_endpoints_reference_C_difference": 1.7899492721351606e-09,
+      "at_own_endpoints_surface_C_difference": 2.443991051204186e-10,
+      "targets": {
+        "full_output_C": 2e-05,
+        "endpoint_s": 0.1
+      },
+      "C_passed": true,
+      "endpoint_passed": false,
+      "passed": false,
+      "interpretation": "Observed numerical refinement differences, not an exact-solution bound or measured-field validation"
+    },
+    {
+      "coarse": "q4_N960_dt0.5_startup768_shrinking_evdt0.05_tol0.01",
+      "fine": "q4_N960_dt0.0625_startup768_shrinking_evdt0.05_tol0.01",
+      "kind": "time",
+      "comparison_times": 3066,
+      "comparison_radii": 21,
+      "comparison_reference_positions": 101,
+      "last_common_regular_time_s": 183900,
+      "interpolation_used": false,
+      "radius_histories_identical": true,
+      "physical_masks_identical": true,
+      "physical_inside_values": 41227,
+      "physical_outside_values": 23159,
+      "coarse_config": {
+        "cells": 960,
+        "dt_max": 0.5,
+        "dt_scale": 0.0013020833333333333,
+        "time_growth": 600.0,
+        "event_dt": 0.05,
+        "epsilon_t": 0.01,
+        "shrinking": true,
+        "atol": 1e-10,
+        "rtol": 1e-11
+      },
+      "fine_config": {
+        "cells": 960,
+        "dt_max": 0.0625,
+        "dt_scale": 0.0013020833333333333,
+        "time_growth": 600.0,
+        "event_dt": 0.05,
+        "epsilon_t": 0.01,
+        "shrinking": true,
+        "atol": 1e-10,
+        "rtol": 1e-11
+      },
+      "case_paths": {
+        "coarse": "q4\\runs\\q4_N960_dt0.5_startup768_shrinking_evdt0.05_tol0.01.npz",
+        "fine": "q4\\runs\\q4_N960_dt0.0625_startup768_shrinking_evdt0.05_tol0.01.npz"
+      },
+      "coarse_path": "q4\\runs\\q4_N960_dt0.5_startup768_shrinking_evdt0.05_tol0.01.npz",
+      "fine_path": "q4\\runs\\q4_N960_dt0.0625_startup768_shrinking_evdt0.05_tol0.01.npz",
+      "time_step_ratio": 8.0,
+      "physical_C": {
+        "maximum": 7.2256794902969546e-06,
+        "time_s": 36300.0,
+        "radius_cm": 0.0,
+        "values_compared": 41227
+      },
+      "reference_C": {
+        "maximum": 7.2256794902969546e-06,
+        "time_s": 36300.0,
+        "xi": 0.0,
+        "values_compared": 309666
+      },
+      "surface_C": {
+        "maximum": 3.0039353920985334e-06,
+        "time_s": 13920.0,
+        "values_compared": 3066
+      },
+      "C": {
+        "maximum": 7.2256794902969546e-06,
+        "maximum_by_view": {
+          "physical": 7.2256794902969546e-06,
+          "reference": 7.2256794902969546e-06,
+          "surface": 3.0039353920985334e-06,
+          "full_grid_maximum": 7.2256794902969546e-06
+        }
+      },
+      "physical_T": {
+        "maximum": 0.0001662209296000583,
+        "time_s": 13560.0,
+        "radius_cm": 1.4000000000000001,
+        "values_compared": 41227
+      },
+      "reference_T": {
+        "maximum": 0.00016650500771220322,
+        "time_s": 13560.0,
+        "xi": 0.9500000000000001,
+        "values_compared": 309666
+      },
+      "surface_T": {
+        "maximum": 0.0001587276858003861,
+        "time_s": 13560.0,
+        "values_compared": 3066
+      },
+      "T": {
+        "maximum": 0.00016650500771220322,
+        "maximum_by_view": {
+          "physical": 0.0001662209296000583,
+          "reference": 0.00016650500771220322,
+          "surface": 0.0001587276858003861
+        }
+      },
+      "full_grid_maximum_C": {
+        "maximum": 7.2256794902969546e-06,
+        "time_s": 36300.0
+      },
+      "finish_time_s": {
+        "coarse": 183914.61181640625,
+        "fine": 183913.54248046875,
+        "difference": 1.0693359375
+      },
+      "at_own_endpoints_reference_C_difference": 1.0573382586143154e-09,
+      "at_own_endpoints_surface_C_difference": 1.5703401079480983e-10,
+      "targets": {
+        "full_output_C": 2e-05,
+        "endpoint_s": 0.1
+      },
+      "C_passed": true,
+      "endpoint_passed": false,
+      "passed": false,
+      "interpretation": "Observed numerical refinement differences, not an exact-solution bound or measured-field validation"
+    }
+  ],
+  "all_requested_comparisons_passed": false,
+  "source_policy": "Every grid is solved from t=0 and the original Appendix 4 initial state; no seed projection",
+  "claim_boundary": "Separate observed numerical differences; not a combined exact-solution error bound"
+}

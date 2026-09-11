@@ -1,0 +1,47 @@
+{
+  "cells": 960,
+  "dt": 0.03125,
+  "event_dt": 0.05,
+  "event_tol": 0.01,
+  "source": "production",
+  "tight": false,
+  "label": "q3_N960_dt0.03125_production_evdt0.05_tol0.01",
+  "path": "E:\\app\\codex\\\u8bfe\u5916\\NIPT-2026A\\2026A-herbal-drying\\q3\\runs\\q3_N960_dt0.03125_production_evdt0.05_tol0.01.npz",
+  "source_path": "E:\\app\\codex\\\u8bfe\u5916\\NIPT-2026A\\2026A-herbal-drying\\q2\\solution.npz",
+  "finish_time_s": 206900.44921875,
+  "checks": {
+    "passed": true,
+    "finish_time_s": 206900.44921875,
+    "strict_final_max_C": 0.14999999978080958,
+    "strict_final_max_r_m": 0.0,
+    "event_bracket": {
+      "t_minus": 206900.44189453125,
+      "t_plus": 206900.44921875,
+      "g_minus": 1.9142629426038837e-09,
+      "g_plus": -2.1919041581774934e-10,
+      "width": 0.00732421875
+    },
+    "endpoint_full_state_checks": {
+      "minus": {
+        "independent_max_C": 0.15000000191426294,
+        "reintegrated_state_max_difference": 0.0,
+        "reintegrated_loss_difference": 0.0
+      },
+      "plus": {
+        "independent_max_C": 0.14999999978080958,
+        "reintegrated_state_max_difference": 0.0,
+        "reintegrated_loss_difference": 0.0
+      }
+    },
+    "maximum_water_balance_residual": 2.539746191132508e-12,
+    "q2_prefix_max_difference": {
+      "temperature_K": 0.0,
+      "moisture": 0.0
+    },
+    "q2_prefix_loss_difference": 2.220446049250313e-16,
+    "original_mesh_preserved": true,
+    "sampled_C_values_checked": 72450,
+    "interpretation": "Discrete invariants and unchanged supplied-data prefix; not true-solution or experimental validation"
+  },
+  "elapsed_this_call_s": 2126.5302758999896
+}

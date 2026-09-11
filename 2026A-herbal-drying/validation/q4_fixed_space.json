@@ -1,0 +1,125 @@
+{
+  "predeclared_limits": {
+    "endpoint_s": 1.0,
+    "field_C": 2e-05
+  },
+  "comparisons": [
+    {
+      "kind": "fixed_space",
+      "comparison_times": 7791,
+      "comparison_radii": 21,
+      "comparison_reference_positions": 101,
+      "last_common_regular_time_s": 467400,
+      "interpolation_used": false,
+      "radius_histories_identical": true,
+      "physical_masks_identical": true,
+      "physical_inside_values": 163611,
+      "physical_outside_values": 0,
+      "coarse_config": {
+        "cells": 1280,
+        "dt_max": 0.5,
+        "dt_scale": 0.0013020833333333333,
+        "time_growth": 600.0,
+        "event_dt": 0.05,
+        "epsilon_t": 0.01,
+        "shrinking": false,
+        "atol": 1e-10,
+        "rtol": 1e-11
+      },
+      "fine_config": {
+        "cells": 1600,
+        "dt_max": 0.5,
+        "dt_scale": 0.0013020833333333333,
+        "time_growth": 600.0,
+        "event_dt": 0.05,
+        "epsilon_t": 0.01,
+        "shrinking": false,
+        "atol": 1e-10,
+        "rtol": 1e-11
+      },
+      "case_paths": {
+        "coarse": "q4/cases/fixed_N1280_dt0.5_startup1over768_evdt0.05_tol0.01.npz",
+        "fine": "q4/cases/fixed_N1600_dt0.5_startup1over768_evdt0.05_tol0.01.npz"
+      },
+      "coarse_path": "q4/cases/fixed_N1280_dt0.5_startup1over768_evdt0.05_tol0.01.npz",
+      "fine_path": "q4/cases/fixed_N1600_dt0.5_startup1over768_evdt0.05_tol0.01.npz",
+      "physical_C": {
+        "maximum": 5.060023902547783e-06,
+        "time_s": 60.0,
+        "radius_cm": 2.0,
+        "values_compared": 163611
+      },
+      "reference_C": {
+        "maximum": 1.1552104008050179e-05,
+        "time_s": 120.0,
+        "xi": 0.97,
+        "values_compared": 786891
+      },
+      "surface_C": {
+        "maximum": 5.060023902547783e-06,
+        "time_s": 60.0,
+        "values_compared": 7791
+      },
+      "C": {
+        "maximum": 1.1552104008050179e-05,
+        "maximum_by_view": {
+          "physical": 5.060023902547783e-06,
+          "reference": 1.1552104008050179e-05,
+          "surface": 5.060023902547783e-06,
+          "full_grid_maximum": 4.963369995003575e-07
+        }
+      },
+      "physical_T": {
+        "maximum": 1.4851065657239815e-06,
+        "time_s": 2700.0,
+        "radius_cm": 0.0,
+        "values_compared": 163611
+      },
+      "reference_T": {
+        "maximum": 1.4851065657239815e-06,
+        "time_s": 2700.0,
+        "xi": 0.0,
+        "values_compared": 786891
+      },
+      "surface_T": {
+        "maximum": 2.2836690050098696e-07,
+        "time_s": 2940.0,
+        "values_compared": 7791
+      },
+      "T": {
+        "maximum": 1.4851065657239815e-06,
+        "maximum_by_view": {
+          "physical": 1.4851065657239815e-06,
+          "reference": 1.4851065657239815e-06,
+          "surface": 2.2836690050098696e-07
+        }
+      },
+      "full_grid_maximum_C": {
+        "maximum": 4.963369995003575e-07,
+        "time_s": 19800.0
+      },
+      "finish_time_s": {
+        "coarse": 467439.90234375,
+        "fine": 467439.931640625,
+        "difference": 0.029296875
+      },
+      "at_own_endpoints_reference_C_difference": 4.0145415536319007e-07,
+      "at_own_endpoints_surface_C_difference": 2.2581621988981837e-10,
+      "targets": {
+        "full_output_C": 2e-05,
+        "endpoint_s": 1.0
+      },
+      "C_passed": true,
+      "endpoint_passed": true,
+      "passed": true,
+      "interpretation": "Observed numerical refinement differences, not an exact-solution bound or measured-field validation",
+      "coarse": "fixed_N1280_dt0.5_startup1over768_evdt0.05_tol0.01",
+      "fine": "fixed_N1600_dt0.5_startup1over768_evdt0.05_tol0.01",
+      "coarse_sha256": "e52580e052395ad7ba30f592b3fa45416164f35744284588887abe7fa37f923e",
+      "fine_sha256": "a6f660998a9c4996cab690c485de0b3b5c7e1cfcb65ce3b0f1ac5b5b7d3fe318"
+    }
+  ],
+  "all_requested_comparisons_passed": true,
+  "source_policy": "Both cases solve Appendix 4 from t=0 uniform initial fields on their own original grids; no seed projection.",
+  "claim_boundary": "Separate observed time or space refinement differences, not a combined exact-solution bound or measured internal-field validation."
+}

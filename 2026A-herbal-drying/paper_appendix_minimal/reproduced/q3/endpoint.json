@@ -1,0 +1,20 @@
+{
+  "finish_time_s": 206900.44921875,
+  "finish_time_h": 57.472347005208334,
+  "bracket": {
+    "t_minus": 206900.44189453125,
+    "t_plus": 206900.44921875,
+    "g_minus": 1.9142629426038837e-09,
+    "g_plus": -2.1919041581774934e-10,
+    "width": 0.00732421875
+  },
+  "dt_max": 0.03125,
+  "event_dt": 0.03125,
+  "event_tol": 0.01,
+  "from_initial": false,
+  "standalone_same_algorithm": true,
+  "prefix_path": "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\paper_appendix_minimal\\reproduced\\q3_prefix\\q2_independent.npz",
+  "prefix_sha256": "909b54cbfe0d8fe261d86633b14d9c7a52db332e83559756080f7760e87f3ba5",
+  "source_attachment_sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+  "max_water_balance": 2.540190280342358e-12
+}

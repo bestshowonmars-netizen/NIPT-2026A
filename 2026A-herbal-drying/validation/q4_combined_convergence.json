@@ -1,0 +1,194 @@
+{
+  "series": {
+    "q3_space": {
+      "question": 3,
+      "kind": "space",
+      "points": [
+        {
+          "path": "E:/app/codex/课外/NIPT-2026A/2026A-herbal-drying/q3/runs/q3_N960_dt0.25_matched_q2_evdt0.05_tol0.01.npz",
+          "cells": 960,
+          "dt": 0.25,
+          "finish_time_s": 206901.09375,
+          "deviation_s": 0.05859375
+        },
+        {
+          "path": "E:/app/codex/课外/NIPT-2026A/2026A-herbal-drying/q3/runs/q3_N1280_dt0.25_matched_q2_evdt0.05_tol0.01.npz",
+          "cells": 1280,
+          "dt": 0.25,
+          "finish_time_s": 206901.0498046875,
+          "deviation_s": 0.0146484375
+        },
+        {
+          "path": "E:/app/codex/课外/NIPT-2026A/2026A-herbal-drying/q3/runs/q3_N1600_dt0.25_matched_q2_evdt0.05_tol0.01.npz",
+          "cells": 1600,
+          "dt": 0.25,
+          "finish_time_s": 206901.03515625,
+          "deviation_s": 0.0
+        }
+      ],
+      "settings": {
+        "cells": null,
+        "dt_max": 0.25,
+        "event_tol": 0.01,
+        "event_dt": 0.05,
+        "requested_event_dt": 0.05,
+        "dt_scale": null,
+        "time_growth": null,
+        "q2_prefix": {
+          "dt_scale": 0.0009765625,
+          "dt_max": 0.00390625,
+          "time_growth": 600
+        },
+        "q2_prefix_mode": "own_matching_mesh"
+      },
+      "reference_path": "E:/app/codex/课外/NIPT-2026A/2026A-herbal-drying/q3/runs/q3_N1600_dt0.25_matched_q2_evdt0.05_tol0.01.npz",
+      "reference_finish_time_s": 206901.03515625,
+      "report_path": "E:/app/codex/课外/NIPT-2026A/2026A-herbal-drying/validation/q3_convergence_space.json",
+      "report_sha256": "ba7635cb52bb4a40149d9161f24565d39566bbf771dd5e74c36fa76d1e33e5dd"
+    },
+    "q4_space": {
+      "question": 4,
+      "kind": "space",
+      "points": [
+        {
+          "path": "E:/app/codex/课外/NIPT-2026A/2026A-herbal-drying/q4/runs/q4_N960_dt0.5_startup768_shrinking_evdt0.05_tol0.01.npz",
+          "cells": 960,
+          "dt": 0.5,
+          "finish_time_s": 183914.61181640625,
+          "deviation_s": 0.0439453125
+        },
+        {
+          "path": "E:/app/codex/课外/NIPT-2026A/2026A-herbal-drying/q4/runs/q4_N1280_dt0.5_startup768_shrinking_evdt0.05_tol0.01.npz",
+          "cells": 1280,
+          "dt": 0.5,
+          "finish_time_s": 183914.64111328125,
+          "deviation_s": 0.0146484375
+        },
+        {
+          "path": "E:/app/codex/课外/NIPT-2026A/2026A-herbal-drying/q4/runs/q4_N1600_dt0.5_startup768_shrinking_evdt0.05_tol0.01.npz",
+          "cells": 1600,
+          "dt": 0.5,
+          "finish_time_s": 183914.65576171875,
+          "deviation_s": 0.0
+        }
+      ],
+      "settings": {
+        "cells": null,
+        "dt_max": 0.5,
+        "event_tol": 0.01,
+        "event_dt": 0.05,
+        "requested_event_dt": 0.05,
+        "dt_scale": 0.0013020833333333333,
+        "time_growth": 600.0
+      },
+      "reference_path": "E:/app/codex/课外/NIPT-2026A/2026A-herbal-drying/q4/runs/q4_N1600_dt0.5_startup768_shrinking_evdt0.05_tol0.01.npz",
+      "reference_finish_time_s": 183914.65576171875,
+      "report_path": "E:/app/codex/课外/NIPT-2026A/2026A-herbal-drying/validation/q4_convergence_space.json",
+      "report_sha256": "31a82058fd60a087a9bc978e0179c1957d3ff0a0451472165b4729678866243d"
+    },
+    "q3_time": {
+      "question": 3,
+      "kind": "time",
+      "points": [
+        {
+          "path": "E:/app/codex/课外/NIPT-2026A/2026A-herbal-drying/q3/runs/q3_N960_dt0.03125_production_evdt0.05_tol0.01.npz",
+          "cells": 960,
+          "dt": 0.03125,
+          "finish_time_s": 206900.44921875,
+          "deviation_s": 0.0
+        },
+        {
+          "path": "E:/app/codex/课外/NIPT-2026A/2026A-herbal-drying/q3/runs/q3_N960_dt0.0625_production_evdt0.05_tol0.01.npz",
+          "cells": 960,
+          "dt": 0.0625,
+          "finish_time_s": 206900.54443359375,
+          "deviation_s": 0.09521484375
+        },
+        {
+          "path": "E:/app/codex/课外/NIPT-2026A/2026A-herbal-drying/q3/runs/q3_N960_dt0.25_production_evdt0.05_tol0.01.npz",
+          "cells": 960,
+          "dt": 0.25,
+          "finish_time_s": 206901.09375,
+          "deviation_s": 0.64453125
+        },
+        {
+          "path": "E:/app/codex/课外/NIPT-2026A/2026A-herbal-drying/q3/runs/q3_N960_dt0.5_production_evdt0.05_tol0.01.npz",
+          "cells": 960,
+          "dt": 0.5,
+          "finish_time_s": 206901.81884765625,
+          "deviation_s": 1.36962890625
+        },
+        {
+          "path": "E:/app/codex/课外/NIPT-2026A/2026A-herbal-drying/q3/runs/q3_N960_dt1_production_evdt0.05_tol0.01.npz",
+          "cells": 960,
+          "dt": 1.0,
+          "finish_time_s": 206903.28369140625,
+          "deviation_s": 2.83447265625
+        }
+      ],
+      "settings": {
+        "cells": 960,
+        "dt_max": null,
+        "event_tol": 0.01,
+        "event_dt": null,
+        "requested_event_dt": 0.05,
+        "dt_scale": null,
+        "time_growth": null,
+        "q2_prefix": {
+          "dt_scale": 0.0013020833333333333,
+          "dt_max": 0.005208333333333333,
+          "time_growth": 600.0
+        },
+        "q2_prefix_mode": "same_production_state"
+      },
+      "reference_path": "E:/app/codex/课外/NIPT-2026A/2026A-herbal-drying/q3/runs/q3_N960_dt0.03125_production_evdt0.05_tol0.01.npz",
+      "reference_finish_time_s": 206900.44921875,
+      "report_path": "E:/app/codex/课外/NIPT-2026A/2026A-herbal-drying/validation/q3_convergence_time.json",
+      "report_sha256": "c0a83f18761e6095511f55c237b01dfe2be9edd79841412e36feb46aff888b5e"
+    },
+    "q4_time": {
+      "question": 4,
+      "kind": "time",
+      "points": [
+        {
+          "path": "E:/app/codex/课外/NIPT-2026A/2026A-herbal-drying/q4/runs/q4_N1280_dt0.03125_startup768_shrinking_evdt0.05_tol0.01.npz",
+          "cells": 1280,
+          "dt": 0.03125,
+          "finish_time_s": 183913.49853515625,
+          "deviation_s": 0.0
+        },
+        {
+          "path": "E:/app/codex/课外/NIPT-2026A/2026A-herbal-drying/q4/runs/q4_N1280_dt0.0625_startup768_shrinking_evdt0.05_tol0.01.npz",
+          "cells": 1280,
+          "dt": 0.0625,
+          "finish_time_s": 183913.57177734375,
+          "deviation_s": 0.0732421875
+        },
+        {
+          "path": "E:/app/codex/课外/NIPT-2026A/2026A-herbal-drying/q4/runs/q4_N1280_dt0.5_startup768_shrinking_evdt0.05_tol0.01.npz",
+          "cells": 1280,
+          "dt": 0.5,
+          "finish_time_s": 183914.64111328125,
+          "deviation_s": 1.142578125
+        }
+      ],
+      "settings": {
+        "cells": 1280,
+        "dt_max": null,
+        "event_tol": 0.01,
+        "event_dt": null,
+        "requested_event_dt": 0.05,
+        "dt_scale": 0.0013020833333333333,
+        "time_growth": 600.0
+      },
+      "reference_path": "E:/app/codex/课外/NIPT-2026A/2026A-herbal-drying/q4/runs/q4_N1280_dt0.03125_startup768_shrinking_evdt0.05_tol0.01.npz",
+      "reference_finish_time_s": 183913.49853515625,
+      "report_path": "E:/app/codex/课外/NIPT-2026A/2026A-herbal-drying/validation/q4_convergence_time.json",
+      "report_sha256": "1f624acacb37209ca82a2dba8a951db6666b5d600ccb839ac1bd2070764e6b69"
+    }
+  },
+  "caption": "问题3与问题4的空间、时间离散对干燥终点的影响。纵轴为各模型相对本序列最细参考档的终点绝对偏差，采用线性轴；零点为参考档自比较，并非解析真解误差。空间序列分别固定$\\Delta t_3=0.25$ s、$\\Delta t_4=0.5$ s，均以本组最大$N$为参考；问题3各网格分别使用自身问题2末态，早期$\\tau=1/1024$ s；问题4从初态独立计算，$\\tau=1/768$ s。时间序列分别固定$N_3=960$、$N_4=1280$，均以本组最小时间步为参考；问题3共用同一正式问题2末态，问题4保持相同初期步长规则。时间序列事件步长均取$\\min(\\Delta t_{\\max},0.05\\ \\mathrm{s})$，事件夹逼容差分别为0.01 s与0.01 s。空间含水率差仍需独立验收，不能仅凭本图的终点偏差接受网格。",
+  "linear_deviation_axis": true,
+  "reference_self_comparisons_are_zero": true,
+  "exact_solution_error_claimed": false
+}

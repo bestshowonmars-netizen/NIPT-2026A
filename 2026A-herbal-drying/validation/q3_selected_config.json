@@ -1,0 +1,120 @@
+{
+  "status": "validated",
+  "validated": true,
+  "cells": 960,
+  "dt_max": 0.03125,
+  "event_dt": 0.03125,
+  "event_tol": 0.01,
+  "finish_time_s": 206900.44921875,
+  "finish_time_h": 57.472347005208334,
+  "selected_run_label": "q3_N960_dt0.03125_production_evdt0.05_tol0.01",
+  "selected_run_path": "q3/runs/q3_N960_dt0.03125_production_evdt0.05_tol0.01.npz",
+  "predeclared_limits": {
+    "field_C": 2e-05,
+    "endpoint_s": 0.1,
+    "event_s": 0.02,
+    "restart": 1e-12,
+    "water": 1e-08
+  },
+  "required_comparisons": [
+    {
+      "kind": "time",
+      "coarse": "q3_N960_dt0.0625_production_evdt0.05_tol0.01",
+      "fine": "q3_N960_dt0.03125_production_evdt0.05_tol0.01",
+      "coarse_path": "q3/runs/q3_N960_dt0.0625_production_evdt0.05_tol0.01.npz",
+      "fine_path": "q3/runs/q3_N960_dt0.03125_production_evdt0.05_tol0.01.npz",
+      "coarse_sha256": "5976a239d350965d3c01b6e75e5cacb4f3fd9775a9155f60b0806776c6c19fd3",
+      "fine_sha256": "123b01ae4eb8fe7914ca4dafe3a706c1d48daf4cca6964d9bb2860a72a1c24dd",
+      "field_limit": 2e-05,
+      "endpoint_limit_s": 0.1,
+      "record_path": "validation/q3_convergence_time.json"
+    },
+    {
+      "kind": "space",
+      "coarse": "q3_N960_dt0.25_matched_q2_evdt0.05_tol0.01",
+      "fine": "q3_N1280_dt0.25_matched_q2_evdt0.05_tol0.01",
+      "coarse_path": "q3/runs/q3_N960_dt0.25_matched_q2_evdt0.05_tol0.01.npz",
+      "fine_path": "q3/runs/q3_N1280_dt0.25_matched_q2_evdt0.05_tol0.01.npz",
+      "coarse_sha256": "2dea551dc2214c87c9f37e0b70bf8d9699ecf7b312261d3a83c33a6a8f6827ff",
+      "fine_sha256": "28061441aabddbe0987364f95c7a9b0fd2e153e3a584b80095e0c316a30d8d08",
+      "field_limit": 2e-05,
+      "endpoint_limit_s": 0.1,
+      "record_path": "validation/q3_convergence_space.json"
+    },
+    {
+      "kind": "space",
+      "coarse": "q3_N1280_dt0.25_matched_q2_evdt0.05_tol0.01",
+      "fine": "q3_N1600_dt0.25_matched_q2_evdt0.05_tol0.01",
+      "coarse_path": "q3/runs/q3_N1280_dt0.25_matched_q2_evdt0.05_tol0.01.npz",
+      "fine_path": "q3/runs/q3_N1600_dt0.25_matched_q2_evdt0.05_tol0.01.npz",
+      "coarse_sha256": "28061441aabddbe0987364f95c7a9b0fd2e153e3a584b80095e0c316a30d8d08",
+      "fine_sha256": "c1f18cd8c4e3aeb2d71cc61c4d3ecfd73584faf31fbe0d6bae63c532653f961c",
+      "field_limit": 2e-05,
+      "endpoint_limit_s": 0.1,
+      "record_path": "validation/q3_convergence_space.json"
+    },
+    {
+      "kind": "space_cross_two_levels",
+      "coarse": "q3_N960_dt0.25_matched_q2_evdt0.05_tol0.01",
+      "fine": "q3_N1600_dt0.25_matched_q2_evdt0.05_tol0.01",
+      "coarse_path": "q3/runs/q3_N960_dt0.25_matched_q2_evdt0.05_tol0.01.npz",
+      "fine_path": "q3/runs/q3_N1600_dt0.25_matched_q2_evdt0.05_tol0.01.npz",
+      "coarse_sha256": "2dea551dc2214c87c9f37e0b70bf8d9699ecf7b312261d3a83c33a6a8f6827ff",
+      "fine_sha256": "c1f18cd8c4e3aeb2d71cc61c4d3ecfd73584faf31fbe0d6bae63c532653f961c",
+      "field_limit": 2e-05,
+      "endpoint_limit_s": 0.1,
+      "record_path": "validation/q3_convergence_space.json"
+    },
+    {
+      "kind": "q2_seed_sensitivity",
+      "coarse": "q3_N960_dt0.25_production_evdt0.05_tol0.01",
+      "fine": "q3_N960_dt0.25_matched_q2_evdt0.05_tol0.01",
+      "coarse_path": "q3/runs/q3_N960_dt0.25_production_evdt0.05_tol0.01.npz",
+      "fine_path": "q3/runs/q3_N960_dt0.25_matched_q2_evdt0.05_tol0.01.npz",
+      "coarse_sha256": "0135073cd34f6b3ab7d304f7fa41e8ee3add84a6916dc5cdba73b7e57d45a67c",
+      "fine_sha256": "2dea551dc2214c87c9f37e0b70bf8d9699ecf7b312261d3a83c33a6a8f6827ff",
+      "field_limit": 2e-05,
+      "endpoint_limit_s": 0.1,
+      "record_path": "validation/q3_convergence_space.json"
+    },
+    {
+      "kind": "event_tolerance",
+      "coarse": "local_event_N960_dt0.03125_evdt0.03125_tol0.01",
+      "fine": "local_event_N960_dt0.03125_evdt0.03125_tol0.001",
+      "coarse_path": "q3/runs/local_event_N960_dt0.03125_evdt0.03125_tol0.01.npz",
+      "fine_path": "q3/runs/local_event_N960_dt0.03125_evdt0.03125_tol0.001.npz",
+      "coarse_sha256": "b3ab27312d4d777d33c1eda3e0fd32b5f2d0248322ee09f9b688cd957e194509",
+      "fine_sha256": "e9cc8052286954eacdee9ac64a963ba2078fb9d316fc9f8fd591e8d17b7c3229",
+      "field_limit": 2e-05,
+      "endpoint_limit_s": 0.02,
+      "record_path": "validation/q3_convergence_event.json"
+    },
+    {
+      "kind": "event_integration_step",
+      "coarse": "local_event_N960_dt0.03125_evdt0.03125_tol0.001",
+      "fine": "local_event_N960_dt0.03125_evdt0.015625_tol0.001",
+      "coarse_path": "q3/runs/local_event_N960_dt0.03125_evdt0.03125_tol0.001.npz",
+      "fine_path": "q3/runs/local_event_N960_dt0.03125_evdt0.015625_tol0.001.npz",
+      "coarse_sha256": "e9cc8052286954eacdee9ac64a963ba2078fb9d316fc9f8fd591e8d17b7c3229",
+      "fine_sha256": "cb34dd0992ab37e05a828a88c3f6ed49fa7440e1b149d536798a03d1c944fcac",
+      "field_limit": 2e-05,
+      "endpoint_limit_s": 0.02,
+      "record_path": "validation/q3_convergence_event_step.json"
+    },
+    {
+      "kind": "picard_tolerance",
+      "coarse": "q3_N960_dt1_production_evdt0.05_tol0.01",
+      "fine": "q3_N960_dt1_production_evdt0.05_tol0.01_tight",
+      "coarse_path": "q3/runs/q3_N960_dt1_production_evdt0.05_tol0.01.npz",
+      "fine_path": "q3/runs/q3_N960_dt1_production_evdt0.05_tol0.01_tight.npz",
+      "coarse_sha256": "5334e20113b452839212214516f9e7fc99bf15a010ef16b58f0116acb1a1f807",
+      "fine_sha256": "b040257c59456f8236eac71cb131e83b295b2a095af8305b9a765b9910acceae",
+      "field_limit": 2e-05,
+      "endpoint_limit_s": 0.1,
+      "record_path": "validation/q3_convergence_picard.json"
+    }
+  ],
+  "selection_reason": "Use the finer member of the first tested time pair satisfying the predeclared endpoint and field criteria; native-grid spatial, event, seed and Picard controls also pass",
+  "validation_boundary": "Separate observed refinement differences, not an exact-solution total error bound",
+  "formalization": "Byte-for-byte promotion of the completed verified run; no new simulation claimed"
+}

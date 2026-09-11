@@ -1,0 +1,166 @@
+{
+  "matrix": "event_step",
+  "predeclared_limits": {
+    "field_C": 2e-05,
+    "endpoint_s": 0.1,
+    "event_s": 0.02,
+    "restart": 1e-12,
+    "water": 1e-08
+  },
+  "runs": [
+    {
+      "label": "local_event_N960_dt0.03125_evdt0.03125_tol0.001",
+      "path": "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\q3\\runs\\local_event_N960_dt0.03125_evdt0.03125_tol0.001.npz",
+      "base_path": "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\q3\\runs\\q3_N960_dt0.03125_production_evdt0.05_tol0.01.npz",
+      "base_sha256": "123b01ae4eb8fe7914ca4dafe3a706c1d48daf4cca6964d9bb2860a72a1c24dd",
+      "anchor_time_s": 206880.0,
+      "anchor_loss_cumulative": 2.425687717290332,
+      "local_work_steps_including_rejected_candidates": 12508,
+      "local_work_iterations_including_rejected_candidates": 25016,
+      "accepted_local_interval_loss": 4.351175302448523e-06,
+      "accepted_local_steps": 655,
+      "event_dt": 0.03125,
+      "event_tol": 0.001,
+      "checks": {
+        "passed": true,
+        "finish_time_s": 206900.44921875,
+        "strict_final_max_C": 0.14999999978080958,
+        "strict_final_max_r_m": 0.0,
+        "event_bracket": {
+          "t_minus": 206900.44830322266,
+          "t_plus": 206900.44921875,
+          "g_minus": 4.74912609238487e-11,
+          "g_plus": -2.1919041581774934e-10,
+          "width": 0.00091552734375
+        },
+        "endpoint_full_state_checks": {
+          "minus": {
+            "independent_max_C": 0.15000000004749126,
+            "reintegrated_state_max_difference": 0.0,
+            "reintegrated_loss_difference": 0.0
+          },
+          "plus": {
+            "independent_max_C": 0.14999999978080958,
+            "reintegrated_state_max_difference": 0.0,
+            "reintegrated_loss_difference": 0.0
+          }
+        },
+        "maximum_water_balance_residual": 2.539746191132508e-12,
+        "q2_prefix_max_difference": {
+          "temperature_K": 0.0,
+          "moisture": 0.0
+        },
+        "q2_prefix_loss_difference": 2.220446049250313e-16,
+        "original_mesh_preserved": true,
+        "sampled_C_values_checked": 72450,
+        "q2_source_sha256_verified": "5c9e894fe77b124467c4c4e5c84300531b7355103369a3b0c70bc78d72958cb9",
+        "interpretation": "Discrete invariants and unchanged supplied-data prefix; not true-solution or experimental validation"
+      },
+      "elapsed_this_call_s": 4.392386599996826
+    },
+    {
+      "label": "local_event_N960_dt0.03125_evdt0.015625_tol0.001",
+      "path": "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\q3\\runs\\local_event_N960_dt0.03125_evdt0.015625_tol0.001.npz",
+      "base_path": "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\q3\\runs\\q3_N960_dt0.03125_production_evdt0.05_tol0.01.npz",
+      "base_sha256": "123b01ae4eb8fe7914ca4dafe3a706c1d48daf4cca6964d9bb2860a72a1c24dd",
+      "anchor_time_s": 206880.0,
+      "anchor_loss_cumulative": 2.425687717290332,
+      "local_work_steps_including_rejected_candidates": 25008,
+      "local_work_iterations_including_rejected_candidates": 50016,
+      "accepted_local_interval_loss": 4.351175605148588e-06,
+      "accepted_local_steps": 1309,
+      "event_dt": 0.015625,
+      "event_tol": 0.001,
+      "checks": {
+        "passed": true,
+        "finish_time_s": 206900.44921875,
+        "strict_final_max_C": 0.1499999997803796,
+        "strict_final_max_r_m": 0.0,
+        "event_bracket": {
+          "t_minus": 206900.44830322266,
+          "t_plus": 206900.44921875,
+          "g_minus": 4.706124379083576e-11,
+          "g_plus": -2.1962040519518666e-10,
+          "width": 0.00091552734375
+        },
+        "endpoint_full_state_checks": {
+          "minus": {
+            "independent_max_C": 0.15000000004706124,
+            "reintegrated_state_max_difference": 0.0,
+            "reintegrated_loss_difference": 0.0
+          },
+          "plus": {
+            "independent_max_C": 0.1499999997803796,
+            "reintegrated_state_max_difference": 0.0,
+            "reintegrated_loss_difference": 0.0
+          }
+        },
+        "maximum_water_balance_residual": 2.539302101922658e-12,
+        "q2_prefix_max_difference": {
+          "temperature_K": 0.0,
+          "moisture": 0.0
+        },
+        "q2_prefix_loss_difference": 2.220446049250313e-16,
+        "original_mesh_preserved": true,
+        "sampled_C_values_checked": 72450,
+        "q2_source_sha256_verified": "5c9e894fe77b124467c4c4e5c84300531b7355103369a3b0c70bc78d72958cb9",
+        "interpretation": "Discrete invariants and unchanged supplied-data prefix; not true-solution or experimental validation"
+      },
+      "elapsed_this_call_s": 7.434081100000185
+    }
+  ],
+  "failed_runs": {},
+  "comparisons": [
+    {
+      "coarse": "local_event_N960_dt0.03125_evdt0.03125_tol0.001",
+      "fine": "local_event_N960_dt0.03125_evdt0.015625_tol0.001",
+      "kind": "event_integration_step",
+      "comparison_times": 3449,
+      "comparison_radii": 21,
+      "last_common_regular_time_s": 206880,
+      "interpolation_used": false,
+      "coarse_config": {
+        "cells": 960,
+        "dt_max": 0.03125,
+        "event_dt": 0.03125,
+        "epsilon_t": 0.001
+      },
+      "fine_config": {
+        "cells": 960,
+        "dt_max": 0.03125,
+        "event_dt": 0.015625,
+        "epsilon_t": 0.001
+      },
+      "C": {
+        "maximum": 0.0,
+        "time_s": 0.0,
+        "radius_cm": 0.0,
+        "post_3h_maximum": 0.0
+      },
+      "T": {
+        "maximum": 0.0,
+        "time_s": 0.0,
+        "radius_cm": 0.0,
+        "post_3h_maximum": 0.0
+      },
+      "finish_time_s": {
+        "coarse": 206900.44921875,
+        "fine": 206900.44921875,
+        "difference": 0.0
+      },
+      "at_own_endpoints_C_profile_difference": 4.2998937743732313e-13,
+      "targets": {
+        "full_output_C": 2e-05,
+        "endpoint_s": 0.02
+      },
+      "C_passed": true,
+      "C_also_below_1e_5": true,
+      "endpoint_passed": true,
+      "passed": true,
+      "interpretation": "Difference between numerical resolutions; not error against an exact solution or experimental measurement"
+    }
+  ],
+  "all_requested_comparisons_passed": true,
+  "scope": "Identical full-state anchor and unchanged full prefix; only event tolerance/step is changed",
+  "claim_boundary": "Event subproblem convergence, not whole-trajectory discretization accuracy"
+}

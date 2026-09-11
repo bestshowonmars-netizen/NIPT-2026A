@@ -1,0 +1,115 @@
+{
+  "passed": true,
+  "verified_against": "validation/q3_acceptance.json",
+  "files": [
+    {
+      "path": "q2/solution.npz",
+      "sha256": "5c9e894fe77b124467c4c4e5c84300531b7355103369a3b0c70bc78d72958cb9",
+      "unchanged": true
+    },
+    {
+      "path": "data/attachment1.xlsx",
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "unchanged": true
+    },
+    {
+      "path": "q2/final_state.npz",
+      "sha256": "444ecffcd5e1ef45b9987693c3703f89bbc50c1f25469cf7877c950f61838720",
+      "unchanged": true
+    },
+    {
+      "path": "common/solver.py",
+      "sha256": "c530db8008cfe4cd4a973f520bed46f00ee9e33cf3c782cb66a887318608f3ef",
+      "unchanged": true
+    },
+    {
+      "path": "common/finite_volume.py",
+      "sha256": "a26f1558d996008261979f55eeb4e38ba84f57fc5c90a990cb09715823bb718b",
+      "unchanged": true
+    },
+    {
+      "path": "common/continuation.py",
+      "sha256": "daca59030f635bb8c5f1d73eb4ad773e7acaeb9c2aebc82c449a16f573da4af1",
+      "unchanged": true
+    },
+    {
+      "path": "common/material_properties.py",
+      "sha256": "8ae076610b5af73c7fe25fd78fb0d57f16c946c3661838de1c514b577689f691",
+      "unchanged": true
+    },
+    {
+      "path": "common/boundary_conditions.py",
+      "sha256": "c04a1674abdbe508b4820e149f782ecce1d856a0d11e1a7f0d785aa373ddd24a",
+      "unchanged": true
+    },
+    {
+      "path": "common/interpolation.py",
+      "sha256": "1bcc685388ace0ae78a92d672ec4b7f23f7c849bcc4ce90802dde048fc13a76d",
+      "unchanged": true
+    },
+    {
+      "path": "common/data_loader.py",
+      "sha256": "fd8fbd7ca01e02b3dfaf3fae6ee4fa8a59185399e8e330717e01a64f8888d564",
+      "unchanged": true
+    },
+    {
+      "path": "q2/config.py",
+      "sha256": "d891b97e2f3b98c9a50a558c2166fc80b9ed66b17e76d42f876aa3a461b0938a",
+      "unchanged": true
+    },
+    {
+      "path": "q3/config.py",
+      "sha256": "5b9075c1de096886641dd2f69493b4093a6642fdeeece17017ff6d444e1b3026",
+      "unchanged": true
+    },
+    {
+      "path": "q3/end_time_detector.py",
+      "sha256": "510ca0944f5c6a210b2a50d2629c4684eee3a2a9445439768c2d41d92a9db38d",
+      "unchanged": true
+    },
+    {
+      "path": "q3/solve_q3.py",
+      "sha256": "c776d3c2e6da9deca0cc71d1ac9365d852a4dd91bcf778cc33ddcaa564bd60cf",
+      "unchanged": true
+    }
+  ],
+  "interpretation": "Q4 additions preserve the accepted Q2/Q3 sources, input data, and Q2 restart state; no earlier integration was repeated.",
+  "previous_delivery_archive": "E:\\app\\codex\\课外\\output\\问题3交付_20260911\\问题3完整工程.zip",
+  "previous_formal_outputs": [
+    {
+      "path": "q1/solution.npz",
+      "sha256": "b6030faf4b1654b980d5bfa78830a6d4983a93004413d5194c70e443efc4065e",
+      "unchanged": true
+    },
+    {
+      "path": "q2/solution.npz",
+      "sha256": "5c9e894fe77b124467c4c4e5c84300531b7355103369a3b0c70bc78d72958cb9",
+      "unchanged": true
+    },
+    {
+      "path": "q3/solution.npz",
+      "sha256": "123b01ae4eb8fe7914ca4dafe3a706c1d48daf4cca6964d9bb2860a72a1c24dd",
+      "unchanged": true
+    },
+    {
+      "path": "q3/endpoint.json",
+      "sha256": "a20e3b9048cb9b6d11db62f80383c9e8989d452e8a13418853efacccc9d9d96e",
+      "unchanged": true
+    },
+    {
+      "path": "submission_results/result1.xlsx",
+      "sha256": "3e33c6019596d546f59b27e3353dbd16e9e046467cb0a373a864b65c5f767743",
+      "unchanged": true
+    },
+    {
+      "path": "submission_results/result2.xlsx",
+      "sha256": "2788fff31fda952d51ff8b35a0b3ec551d3a3a75b9b7c4aff38f42332f1644d3",
+      "unchanged": true
+    },
+    {
+      "path": "submission_results/result3.xlsx",
+      "sha256": "f0d9f9bfc433a2d1a9b759ffdf3a067d1a441f9ccae100f3545c95894e0065ac",
+      "unchanged": true
+    }
+  ]
+}

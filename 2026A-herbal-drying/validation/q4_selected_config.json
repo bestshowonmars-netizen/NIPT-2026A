@@ -1,0 +1,129 @@
+{
+  "cells": 1280,
+  "dt_max": 0.03125,
+  "dt_scale": 0.0013020833333333333,
+  "time_growth": 600.0,
+  "event_dt": 0.03125,
+  "shrinking": true,
+  "atol": 1e-10,
+  "rtol": 1e-11,
+  "passed": true,
+  "event_tol": 0.01,
+  "formal_case": "q4/runs/q4_N1280_dt0.03125_startup768_shrinking_evdt0.05_tol0.01.npz",
+  "fixed_control": {
+    "cells": 1280,
+    "dt_max": 0.25,
+    "dt_scale": 0.0013020833333333333,
+    "time_growth": 600.0,
+    "event_dt": 0.05,
+    "shrinking": false,
+    "atol": 1e-10,
+    "rtol": 1e-11,
+    "event_tol": 0.01,
+    "formal_case": "q4/cases/fixed_N1280_dt0.25_startup1over768_evdt0.05_tol0.01.npz"
+  },
+  "required_comparisons": [
+    {
+      "report": "validation/q4_convergence_time.json",
+      "index": 1,
+      "scope": "shrinking",
+      "kind": "time"
+    },
+    {
+      "report": "validation/q4_convergence_space.json",
+      "index": 1,
+      "scope": "shrinking",
+      "kind": "space"
+    },
+    {
+      "report": "validation/q4_convergence_startup.json",
+      "index": 0,
+      "scope": "shrinking",
+      "kind": "startup"
+    },
+    {
+      "report": "validation/q4_convergence_picard.json",
+      "index": 0,
+      "scope": "shrinking",
+      "kind": "picard_tolerance"
+    },
+    {
+      "report": "validation/q4_convergence_event.json",
+      "index": 0,
+      "scope": "shrinking",
+      "kind": "event_tolerance"
+    },
+    {
+      "report": "validation/q4_convergence_event_step.json",
+      "index": 0,
+      "scope": "shrinking",
+      "kind": "event_integration_step"
+    },
+    {
+      "report": "validation/q4_fixed_time_final.json",
+      "index": 0,
+      "scope": "fixed"
+    },
+    {
+      "report": "validation/q4_fixed_space.json",
+      "index": 0,
+      "scope": "fixed"
+    }
+  ],
+  "predeclared_limits": {
+    "shrinking": {
+      "endpoint_s": 0.1,
+      "field_C": 2e-05,
+      "event_s": 0.02,
+      "water": 1e-08
+    },
+    "fixed_control": {
+      "endpoint_s": 1.0,
+      "field_C": 2e-05
+    }
+  },
+  "finish_time_s": 183913.49853515625,
+  "finish_time_h": 51.087082926432295,
+  "bracket": {
+    "t_minus": 183913.4912109375,
+    "t_plus": 183913.49853515625,
+    "g_minus": 2.5200927455948374e-10,
+    "g_plus": -3.5089929295573086e-09,
+    "width": 0.00732421875
+  },
+  "final_max_C": 0.14999999649100706,
+  "final_radius_m": 0.012,
+  "maximum_water_balance_residual": 9.992007221626409e-13,
+  "observed_differences": {
+    "time": {
+      "concentration_maximum": 9.412171237954681e-07,
+      "endpoint_s": 0.0732421875
+    },
+    "space": {
+      "concentration_maximum": 1.1521968511729597e-05,
+      "endpoint_s": 0.0146484375
+    },
+    "startup": {
+      "concentration_maximum": 3.993860043127739e-06,
+      "endpoint_s": 0.00732421875
+    },
+    "picard_tolerance": {
+      "concentration_maximum": 4.088257510304061e-13,
+      "endpoint_s": 0.0
+    },
+    "event_tolerance": {
+      "concentration_maximum": 0.0,
+      "endpoint_s": 0.00640869140625
+    },
+    "event_integration_step": {
+      "concentration_maximum": 0.0,
+      "endpoint_s": 0.0
+    }
+  },
+  "promotion_preserves_exact_bytes": true,
+  "promoted_path": "q4/solution.npz",
+  "selection_basis": "Selected N1280 against N1600 at dt_max=0.5 s and selected the finer dt_max=1/32 s from its passing same-grid comparison with 1/16 s. Startup and Picard checks use N1280; local event checks bind this exact formal trajectory.",
+  "rejected_candidates_preserved": true,
+  "claim_boundary": "Separate observed numerical refinement differences, not a strict combined error bound or internal measured-field validation; fixed Appendix 4 control has its separately declared 1 s endpoint target.",
+  "promoted_sha256": "33f1192de2ea75440667f2c616b7134c388f0829c62673fb94f59b0ae8dd6ce2"
+}

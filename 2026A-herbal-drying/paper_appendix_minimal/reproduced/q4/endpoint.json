@@ -1,0 +1,23 @@
+{
+  "finish_time_s": 183913.49853515625,
+  "finish_time_h": 51.087082926432295,
+  "bracket": {
+    "t_minus": 183913.4912109375,
+    "t_plus": 183913.49853515625,
+    "g_minus": 2.5200927455948374e-10,
+    "g_plus": -3.5089929295573086e-09,
+    "width": 0.00732421875
+  },
+  "cells": 1280,
+  "dt_max": 0.03125,
+  "dt_scale": 0.0013020833333333333,
+  "event_dt": 0.03125,
+  "event_tol": 0.01,
+  "shrinking": true,
+  "from_initial": true,
+  "standalone_same_algorithm": true,
+  "maximum_water_balance": 9.965361869035405e-13,
+  "runtime_s": 3023.6240988999925,
+  "attachment_sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+  "radius_sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af"
+}

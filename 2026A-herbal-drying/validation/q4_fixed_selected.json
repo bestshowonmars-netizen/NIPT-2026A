@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "fixed_control": {
+    "cells": 1280,
+    "dt_max": 0.25,
+    "dt_scale": 0.0013020833333333333,
+    "time_growth": 600.0,
+    "event_dt": 0.05,
+    "shrinking": false,
+    "atol": 1e-10,
+    "rtol": 1e-11,
+    "event_tol": 0.01,
+    "formal_case": "q4/cases/fixed_N1280_dt0.25_startup1over768_evdt0.05_tol0.01.npz"
+  },
+  "required_comparisons": [
+    {
+      "report": "validation/q4_fixed_time_final.json",
+      "index": 0,
+      "scope": "fixed"
+    },
+    {
+      "report": "validation/q4_fixed_space.json",
+      "index": 0,
+      "scope": "fixed"
+    }
+  ],
+  "predeclared_limits": {
+    "endpoint_s": 1.0,
+    "field_C": 2e-05
+  },
+  "promoted_path": "q4/fixed_control.npz",
+  "promoted_sha256": "7cbb488fb4bd7231b2f750afd6f10499c997f48650824f774858c555050877e5",
+  "promotion_preserves_exact_bytes": true,
+  "finish_time_s": 467439.169921875,
+  "finish_time_h": 129.8442138671875,
+  "bracket": {
+    "t_minus": 467439.16259765625,
+    "t_plus": 467439.169921875,
+    "g_minus": 1.0193013655346306e-09,
+    "g_plus": -3.358743561054922e-10,
+    "width": 0.00732421875
+  },
+  "final_max_C": 0.14999999966412564,
+  "maximum_water_balance_residual": 1.5858425683745736e-12,
+  "observed_differences": {
+    "fixed_time": {
+      "concentration_maximum": 3.1710663113138082e-06,
+      "endpoint_s": 0.732421875
+    },
+    "fixed_space": {
+      "concentration_maximum": 1.1552104008050179e-05,
+      "endpoint_s": 0.029296875
+    }
+  },
+  "reporting": {
+    "finish_time_h_decimals": 3,
+    "display_finish_time_h": "129.844"
+  },
+  "claim_boundary": "The Appendix 4 fixed-radius control uses separately verified time and space refinement differences. The event bracket is not a bound on global numerical error. No measured internal fields are available."
+}

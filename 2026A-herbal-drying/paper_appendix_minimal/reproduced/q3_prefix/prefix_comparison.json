@@ -1,0 +1,105 @@
+{
+  "from_original_attachment_and_initial_state": true,
+  "main_cache_used_by_independent_solver": false,
+  "full_grid_comparison": {
+    "final_T": {
+      "shape": [
+        960
+      ],
+      "array_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "final_C": {
+      "shape": [
+        960
+      ],
+      "array_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "faces": {
+      "shape": [
+        961
+      ],
+      "array_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "centers": {
+      "shape": [
+        960
+      ],
+      "array_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "volumes": {
+      "shape": [
+        960
+      ],
+      "array_equal": true,
+      "max_abs_difference": 0.0
+    }
+  },
+  "history_21_points_comparison": {
+    "temperature_K": {
+      "shape": [
+        10801,
+        21
+      ],
+      "array_equal": false,
+      "max_abs_difference": 5.684341886080802e-14
+    },
+    "moisture": {
+      "shape": [
+        10801,
+        21
+      ],
+      "array_equal": false,
+      "max_abs_difference": 4.440892098500626e-16
+    }
+  },
+  "times_equal": true,
+  "logs_equal": true,
+  "log_max_abs_difference": 0.0,
+  "fresh_metadata": {
+    "question": 2,
+    "end_time": 10800,
+    "radius": 0.02,
+    "h": 25.0,
+    "hm": 8e-07,
+    "atol": 1e-10,
+    "rtol": 1e-11,
+    "max_iterations": 60,
+    "initial_T": 301.15,
+    "initial_C": 2.55,
+    "time_growth": 600.0,
+    "mesh": "polynomial10_surface_graded",
+    "cells": 960,
+    "dt_scale": 0.0013020833333333333,
+    "dt_max": 0.005208333333333333,
+    "sample_count": 21,
+    "elapsed_seconds": 684.6663702000078,
+    "steps": 2194220,
+    "iterations": 4904759,
+    "rejections": 0,
+    "damped_iterations": 0,
+    "max_scaled_residual": 1.825176700960756e-05,
+    "max_water_balance_residual": 8.966161146872764e-13
+  },
+  "files_sha256": {
+    "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\paper_appendix_minimal\\reproduced\\q3_prefix\\q2_independent.npz": "909b54cbfe0d8fe261d86633b14d9c7a52db332e83559756080f7760e87f3ba5",
+    "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\q2\\final_state.npz": "444ecffcd5e1ef45b9987693c3703f89bbc50c1f25469cf7877c950f61838720",
+    "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\q2\\solution.npz": "5c9e894fe77b124467c4c4e5c84300531b7355103369a3b0c70bc78d72958cb9",
+    "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\data\\attachment1.xlsx": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+    "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\paper_appendix_minimal\\minimal_solver.py": "5d71f167f34a16836be988d7bea5ecb7a449b44694c54888c075a028454cf2f4"
+  },
+  "fresh_solve_command": [
+    "python",
+    "paper_appendix_minimal/minimal_solver.py",
+    "--question",
+    "2",
+    "--compute-only",
+    "--output",
+    "paper_appendix_minimal/reproduced/q3_prefix"
+  ],
+  "fresh_solve_process_exit_code": 0,
+  "output_directory_was_absent_before_launch": true
+}

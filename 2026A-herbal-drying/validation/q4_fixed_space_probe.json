@@ -1,0 +1,13 @@
+{
+  "purpose": "Reject an unresolved initial-layer grid early; this is not a completed drying trajectory or full spatial acceptance",
+  "checks_passed": true,
+  "window_s": [
+    0,
+    120
+  ],
+  "maximum_reference_C_difference": 2.3350839054803174e-05,
+  "time_s": 120.0,
+  "xi": 0.97,
+  "field_limit": 2e-05,
+  "N960_fails_already_in_short_window": true
+}

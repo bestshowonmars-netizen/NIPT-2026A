@@ -7,3 +7,7 @@
 *.npz binary
 *.pdf binary
 *.png binary
+
+# Numerical receipts hash exact bytes; preserve them on every operating system.
+2026A-herbal-drying/** -text whitespace=cr-at-eol,-blank-at-eof
+*.svg -whitespace linguist-generated=true

@@ -1,8 +1,24 @@
-# Reinstallable local dependencies and machine-specific caches
+# Reinstallable dependencies and machine-local caches
 .runtime/
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
+*.nbc
+*.nbi
 .DS_Store
 Thumbs.db
+
+# Local figure previews and exploratory smoke/pilot runs
+**/preview*/
+**/*pilot*
+**/*smoke*
+2026A-herbal-drying/validation/q4_preview*.json
+2026A-herbal-drying/paper_appendix_minimal/reproduced/q3_candidate_dt0.03125/
+2026A-herbal-drying/q3/runs/local_event_N960_dt0.25*
+2026A-herbal-drying/q4/runs/q4_local_event_N1280_dt0.5*
+
+# Credentials and local environment overrides
+.env
+.env.*
+!.env.example
+*.pem
+*.key

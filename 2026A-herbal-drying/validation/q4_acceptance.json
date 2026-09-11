@@ -1,0 +1,1049 @@
+{
+  "passed": true,
+  "formal": {
+    "shrinking": {
+      "path": "q4/solution.npz",
+      "formal_case": "q4/runs/q4_N1280_dt0.03125_startup768_shrinking_evdt0.05_tol0.01.npz",
+      "finish_time_s": 183913.49853515625
+    },
+    "fixed": {
+      "path": "q4/fixed_control.npz",
+      "formal_case": "q4/cases/fixed_N1280_dt0.25_startup1over768_evdt0.05_tol0.01.npz",
+      "finish_time_s": 467439.169921875
+    }
+  },
+  "comparisons": [
+    {
+      "scope": "shrinking",
+      "report": "validation/q4_convergence_time.json",
+      "index": 1,
+      "coarse": "q4_N1280_dt0.0625_startup768_shrinking_evdt0.05_tol0.01",
+      "fine": "q4_N1280_dt0.03125_startup768_shrinking_evdt0.05_tol0.01",
+      "selected_grid_binding_verified": true,
+      "formal_dt_max": 0.03125,
+      "comparison_dt_max": [
+        0.0625,
+        0.03125
+      ],
+      "kind": "time",
+      "comparison_times": 3066,
+      "comparison_radii": 21,
+      "comparison_reference_positions": 101,
+      "last_common_regular_time_s": 183900,
+      "interpolation_used": false,
+      "radius_histories_identical": true,
+      "physical_masks_identical": true,
+      "physical_inside_values": 41227,
+      "physical_outside_values": 23159,
+      "coarse_config": {
+        "cells": 1280,
+        "dt_max": 0.0625,
+        "dt_scale": 0.0013020833333333333,
+        "time_growth": 600.0,
+        "event_dt": 0.05,
+        "epsilon_t": 0.01,
+        "shrinking": true,
+        "atol": 1e-10,
+        "rtol": 1e-11
+      },
+      "fine_config": {
+        "cells": 1280,
+        "dt_max": 0.03125,
+        "dt_scale": 0.0013020833333333333,
+        "time_growth": 600.0,
+        "event_dt": 0.03125,
+        "epsilon_t": 0.01,
+        "shrinking": true,
+        "atol": 1e-10,
+        "rtol": 1e-11
+      },
+      "case_paths": {
+        "coarse": "q4/runs/q4_N1280_dt0.0625_startup768_shrinking_evdt0.05_tol0.01.npz",
+        "fine": "q4/runs/q4_N1280_dt0.03125_startup768_shrinking_evdt0.05_tol0.01.npz"
+      },
+      "coarse_path": "q4/runs/q4_N1280_dt0.0625_startup768_shrinking_evdt0.05_tol0.01.npz",
+      "fine_path": "q4/runs/q4_N1280_dt0.03125_startup768_shrinking_evdt0.05_tol0.01.npz",
+      "time_step_ratio": 2.0,
+      "physical_C": {
+        "maximum": 9.412171237954681e-07,
+        "time_s": 10920.0,
+        "radius_cm": 0.0,
+        "values_compared": 41227
+      },
+      "reference_C": {
+        "maximum": 9.412171237954681e-07,
+        "time_s": 10920.0,
+        "xi": 0.0,
+        "values_compared": 309666
+      },
+      "surface_C": {
+        "maximum": 3.8845383076857587e-07,
+        "time_s": 4320.0,
+        "values_compared": 3066
+      },
+      "C": {
+        "maximum": 9.412171237954681e-07,
+        "maximum_by_view": {
+          "physical": 9.412171237954681e-07,
+          "reference": 9.412171237954681e-07,
+          "surface": 3.8845383076857587e-07,
+          "full_grid_maximum": 9.412171237954681e-07
+        }
+      },
+      "physical_T": {
+        "maximum": 2.4388635722516483e-05,
+        "time_s": 6000.0,
+        "radius_cm": 0.0,
+        "values_compared": 41227
+      },
+      "reference_T": {
+        "maximum": 2.4388635722516483e-05,
+        "time_s": 6000.0,
+        "xi": 0.0,
+        "values_compared": 309666
+      },
+      "surface_T": {
+        "maximum": 1.826228731260926e-05,
+        "time_s": 4980.0,
+        "values_compared": 3066
+      },
+      "T": {
+        "maximum": 2.4388635722516483e-05,
+        "maximum_by_view": {
+          "physical": 2.4388635722516483e-05,
+          "reference": 2.4388635722516483e-05,
+          "surface": 1.826228731260926e-05
+        }
+      },
+      "full_grid_maximum_C": {
+        "maximum": 9.412171237954681e-07,
+        "time_s": 10920.0
+      },
+      "finish_time_s": {
+        "coarse": 183913.57177734375,
+        "fine": 183913.49853515625,
+        "difference": 0.0732421875
+      },
+      "at_own_endpoints_reference_C_difference": 1.3990165970145796e-09,
+      "at_own_endpoints_surface_C_difference": 7.17218021084598e-11,
+      "targets": {
+        "full_output_C": 2e-05,
+        "endpoint_s": 0.1
+      },
+      "C_passed": true,
+      "endpoint_passed": true,
+      "passed": true,
+      "interpretation": "Observed numerical refinement differences, not an exact-solution bound or measured-field validation"
+    },
+    {
+      "scope": "shrinking",
+      "report": "validation/q4_convergence_space.json",
+      "index": 1,
+      "coarse": "q4_N1280_dt0.5_startup768_shrinking_evdt0.05_tol0.01",
+      "fine": "q4_N1600_dt0.5_startup768_shrinking_evdt0.05_tol0.01",
+      "selected_grid_binding_verified": true,
+      "formal_dt_max": 0.03125,
+      "comparison_dt_max": [
+        0.5,
+        0.5
+      ],
+      "kind": "space",
+      "comparison_times": 3066,
+      "comparison_radii": 21,
+      "comparison_reference_positions": 101,
+      "last_common_regular_time_s": 183900,
+      "interpolation_used": false,
+      "radius_histories_identical": true,
+      "physical_masks_identical": true,
+      "physical_inside_values": 41227,
+      "physical_outside_values": 23159,
+      "coarse_config": {
+        "cells": 1280,
+        "dt_max": 0.5,
+        "dt_scale": 0.0013020833333333333,
+        "time_growth": 600.0,
+        "event_dt": 0.05,
+        "epsilon_t": 0.01,
+        "shrinking": true,
+        "atol": 1e-10,
+        "rtol": 1e-11
+      },
+      "fine_config": {
+        "cells": 1600,
+        "dt_max": 0.5,
+        "dt_scale": 0.0013020833333333333,
+        "time_growth": 600.0,
+        "event_dt": 0.05,
+        "epsilon_t": 0.01,
+        "shrinking": true,
+        "atol": 1e-10,
+        "rtol": 1e-11
+      },
+      "case_paths": {
+        "coarse": "q4/runs/q4_N1280_dt0.5_startup768_shrinking_evdt0.05_tol0.01.npz",
+        "fine": "q4/runs/q4_N1600_dt0.5_startup768_shrinking_evdt0.05_tol0.01.npz"
+      },
+      "coarse_path": "q4/runs/q4_N1280_dt0.5_startup768_shrinking_evdt0.05_tol0.01.npz",
+      "fine_path": "q4/runs/q4_N1600_dt0.5_startup768_shrinking_evdt0.05_tol0.01.npz",
+      "physical_C": {
+        "maximum": 7.524325261076825e-06,
+        "time_s": 300.0,
+        "radius_cm": 1.9,
+        "values_compared": 41227
+      },
+      "reference_C": {
+        "maximum": 1.1521968511729597e-05,
+        "time_s": 120.0,
+        "xi": 0.97,
+        "values_compared": 309666
+      },
+      "surface_C": {
+        "maximum": 5.045139835235801e-06,
+        "time_s": 60.0,
+        "values_compared": 3066
+      },
+      "C": {
+        "maximum": 1.1521968511729597e-05,
+        "maximum_by_view": {
+          "physical": 7.524325261076825e-06,
+          "reference": 1.1521968511729597e-05,
+          "surface": 5.045139835235801e-06,
+          "full_grid_maximum": 4.7432824912263527e-07
+        }
+      },
+      "physical_T": {
+        "maximum": 1.3636461630994745e-06,
+        "time_s": 2220.0,
+        "radius_cm": 0.0,
+        "values_compared": 41227
+      },
+      "reference_T": {
+        "maximum": 1.3636461630994745e-06,
+        "time_s": 2220.0,
+        "xi": 0.0,
+        "values_compared": 309666
+      },
+      "surface_T": {
+        "maximum": 2.1214896150922868e-07,
+        "time_s": 2940.0,
+        "values_compared": 3066
+      },
+      "T": {
+        "maximum": 1.3636461630994745e-06,
+        "maximum_by_view": {
+          "physical": 1.3636461630994745e-06,
+          "reference": 1.3636461630994745e-06,
+          "surface": 2.1214896150922868e-07
+        }
+      },
+      "full_grid_maximum_C": {
+        "maximum": 4.7432824912263527e-07,
+        "time_s": 13620.0
+      },
+      "finish_time_s": {
+        "coarse": 183914.64111328125,
+        "fine": 183914.65576171875,
+        "difference": 0.0146484375
+      },
+      "at_own_endpoints_reference_C_difference": 3.848403964112901e-07,
+      "at_own_endpoints_surface_C_difference": 3.428771294666788e-10,
+      "targets": {
+        "full_output_C": 2e-05,
+        "endpoint_s": 0.1
+      },
+      "C_passed": true,
+      "endpoint_passed": true,
+      "passed": true,
+      "interpretation": "Observed numerical refinement differences, not an exact-solution bound or measured-field validation"
+    },
+    {
+      "scope": "shrinking",
+      "report": "validation/q4_convergence_startup.json",
+      "index": 0,
+      "coarse": "q4_N1280_dt0.5_startup768_shrinking_evdt0.05_tol0.01",
+      "fine": "q4_N1280_dt0.5_startup1536_shrinking_evdt0.05_tol0.01",
+      "selected_grid_binding_verified": true,
+      "formal_dt_max": 0.03125,
+      "comparison_dt_max": [
+        0.5,
+        0.5
+      ],
+      "kind": "startup",
+      "comparison_times": 3066,
+      "comparison_radii": 21,
+      "comparison_reference_positions": 101,
+      "last_common_regular_time_s": 183900,
+      "interpolation_used": false,
+      "radius_histories_identical": true,
+      "physical_masks_identical": true,
+      "physical_inside_values": 41227,
+      "physical_outside_values": 23159,
+      "coarse_config": {
+        "cells": 1280,
+        "dt_max": 0.5,
+        "dt_scale": 0.0013020833333333333,
+        "time_growth": 600.0,
+        "event_dt": 0.05,
+        "epsilon_t": 0.01,
+        "shrinking": true,
+        "atol": 1e-10,
+        "rtol": 1e-11
+      },
+      "fine_config": {
+        "cells": 1280,
+        "dt_max": 0.5,
+        "dt_scale": 0.0006510416666666666,
+        "time_growth": 600.0,
+        "event_dt": 0.05,
+        "epsilon_t": 0.01,
+        "shrinking": true,
+        "atol": 1e-10,
+        "rtol": 1e-11
+      },
+      "case_paths": {
+        "coarse": "q4/runs/q4_N1280_dt0.5_startup768_shrinking_evdt0.05_tol0.01.npz",
+        "fine": "q4/runs/q4_N1280_dt0.5_startup1536_shrinking_evdt0.05_tol0.01.npz"
+      },
+      "coarse_path": "q4/runs/q4_N1280_dt0.5_startup768_shrinking_evdt0.05_tol0.01.npz",
+      "fine_path": "q4/runs/q4_N1280_dt0.5_startup1536_shrinking_evdt0.05_tol0.01.npz",
+      "startup_step_ratio": 2.0,
+      "physical_C": {
+        "maximum": 3.993860043127739e-06,
+        "time_s": 11700.0,
+        "radius_cm": 0.0,
+        "values_compared": 41227
+      },
+      "reference_C": {
+        "maximum": 3.993860043127739e-06,
+        "time_s": 11700.0,
+        "xi": 0.0,
+        "values_compared": 309666
+      },
+      "surface_C": {
+        "maximum": 1.5680121669969793e-06,
+        "time_s": 12060.0,
+        "values_compared": 3066
+      },
+      "C": {
+        "maximum": 3.993860043127739e-06,
+        "maximum_by_view": {
+          "physical": 3.993860043127739e-06,
+          "reference": 3.993860043127739e-06,
+          "surface": 1.5680121669969793e-06,
+          "full_grid_maximum": 3.993860043127739e-06
+        }
+      },
+      "physical_T": {
+        "maximum": 7.857837562141867e-05,
+        "time_s": 10440.0,
+        "radius_cm": 1.5,
+        "values_compared": 41227
+      },
+      "reference_T": {
+        "maximum": 7.877385087340372e-05,
+        "time_s": 10440.0,
+        "xi": 0.9500000000000001,
+        "values_compared": 309666
+      },
+      "surface_T": {
+        "maximum": 7.516446362387796e-05,
+        "time_s": 10440.0,
+        "values_compared": 3066
+      },
+      "T": {
+        "maximum": 7.877385087340372e-05,
+        "maximum_by_view": {
+          "physical": 7.857837562141867e-05,
+          "reference": 7.877385087340372e-05,
+          "surface": 7.516446362387796e-05
+        }
+      },
+      "full_grid_maximum_C": {
+        "maximum": 3.993860043127739e-06,
+        "time_s": 11700.0
+      },
+      "finish_time_s": {
+        "coarse": 183914.64111328125,
+        "fine": 183914.6337890625,
+        "difference": 0.00732421875
+      },
+      "at_own_endpoints_reference_C_difference": 2.524382924917745e-10,
+      "at_own_endpoints_surface_C_difference": 1.556760970133908e-11,
+      "targets": {
+        "full_output_C": 2e-05,
+        "endpoint_s": 0.1
+      },
+      "C_passed": true,
+      "endpoint_passed": true,
+      "passed": true,
+      "interpretation": "Observed numerical refinement differences, not an exact-solution bound or measured-field validation"
+    },
+    {
+      "scope": "shrinking",
+      "report": "validation/q4_convergence_picard.json",
+      "index": 0,
+      "coarse": "q4_N1280_dt0.5_startup768_shrinking_evdt0.05_tol0.01",
+      "fine": "q4_N1280_dt0.5_startup768_shrinking_evdt0.05_tol0.01_tight",
+      "selected_grid_binding_verified": true,
+      "formal_dt_max": 0.03125,
+      "comparison_dt_max": [
+        0.5,
+        0.5
+      ],
+      "kind": "picard_tolerance",
+      "comparison_times": 3066,
+      "comparison_radii": 21,
+      "comparison_reference_positions": 101,
+      "last_common_regular_time_s": 183900,
+      "interpolation_used": false,
+      "radius_histories_identical": true,
+      "physical_masks_identical": true,
+      "physical_inside_values": 41227,
+      "physical_outside_values": 23159,
+      "coarse_config": {
+        "cells": 1280,
+        "dt_max": 0.5,
+        "dt_scale": 0.0013020833333333333,
+        "time_growth": 600.0,
+        "event_dt": 0.05,
+        "epsilon_t": 0.01,
+        "shrinking": true,
+        "atol": 1e-10,
+        "rtol": 1e-11
+      },
+      "fine_config": {
+        "cells": 1280,
+        "dt_max": 0.5,
+        "dt_scale": 0.0013020833333333333,
+        "time_growth": 600.0,
+        "event_dt": 0.05,
+        "epsilon_t": 0.01,
+        "shrinking": true,
+        "atol": 1e-12,
+        "rtol": 1e-13
+      },
+      "case_paths": {
+        "coarse": "q4/runs/q4_N1280_dt0.5_startup768_shrinking_evdt0.05_tol0.01.npz",
+        "fine": "q4/runs/q4_N1280_dt0.5_startup768_shrinking_evdt0.05_tol0.01_tight.npz"
+      },
+      "coarse_path": "q4/runs/q4_N1280_dt0.5_startup768_shrinking_evdt0.05_tol0.01.npz",
+      "fine_path": "q4/runs/q4_N1280_dt0.5_startup768_shrinking_evdt0.05_tol0.01_tight.npz",
+      "physical_C": {
+        "maximum": 4.088257510304061e-13,
+        "time_s": 106200.0,
+        "radius_cm": 1.2,
+        "values_compared": 41227
+      },
+      "reference_C": {
+        "maximum": 2.0294876890147862e-13,
+        "time_s": 143220.0,
+        "xi": 0.99,
+        "values_compared": 309666
+      },
+      "surface_C": {
+        "maximum": 1.8482437802447294e-13,
+        "time_s": 140400.0,
+        "values_compared": 3066
+      },
+      "C": {
+        "maximum": 4.088257510304061e-13,
+        "maximum_by_view": {
+          "physical": 4.088257510304061e-13,
+          "reference": 2.0294876890147862e-13,
+          "surface": 1.8482437802447294e-13,
+          "full_grid_maximum": 1.4127587988355117e-14
+        }
+      },
+      "physical_T": {
+        "maximum": 1.1368683772161603e-13,
+        "time_s": 6180.0,
+        "radius_cm": 0.0,
+        "values_compared": 41227
+      },
+      "reference_T": {
+        "maximum": 1.1368683772161603e-13,
+        "time_s": 6180.0,
+        "xi": 0.0,
+        "values_compared": 309666
+      },
+      "surface_T": {
+        "maximum": 5.684341886080802e-14,
+        "time_s": 2160.0,
+        "values_compared": 3066
+      },
+      "T": {
+        "maximum": 1.1368683772161603e-13,
+        "maximum_by_view": {
+          "physical": 1.1368683772161603e-13,
+          "reference": 1.1368683772161603e-13,
+          "surface": 5.684341886080802e-14
+        }
+      },
+      "full_grid_maximum_C": {
+        "maximum": 1.4127587988355117e-14,
+        "time_s": 100140.0
+      },
+      "finish_time_s": {
+        "coarse": 183914.64111328125,
+        "fine": 183914.64111328125,
+        "difference": 0.0
+      },
+      "at_own_endpoints_reference_C_difference": 1.7176537969731953e-13,
+      "at_own_endpoints_surface_C_difference": 1.7176537969731953e-13,
+      "targets": {
+        "full_output_C": 2e-05,
+        "endpoint_s": 0.1
+      },
+      "C_passed": true,
+      "endpoint_passed": true,
+      "passed": true,
+      "interpretation": "Observed numerical refinement differences, not an exact-solution bound or measured-field validation"
+    },
+    {
+      "scope": "shrinking",
+      "report": "validation/q4_convergence_event.json",
+      "index": 0,
+      "coarse": "q4_local_event_N1280_dt0.03125_startup768_shrinking_evdt0.03125_tol0.01",
+      "fine": "q4_local_event_N1280_dt0.03125_startup768_shrinking_evdt0.03125_tol0.001",
+      "selected_grid_binding_verified": true,
+      "formal_dt_max": 0.03125,
+      "comparison_dt_max": [
+        0.03125,
+        0.03125
+      ],
+      "kind": "event_tolerance",
+      "comparison_times": 3066,
+      "comparison_radii": 21,
+      "comparison_reference_positions": 101,
+      "last_common_regular_time_s": 183900,
+      "interpolation_used": false,
+      "radius_histories_identical": true,
+      "physical_masks_identical": true,
+      "physical_inside_values": 41227,
+      "physical_outside_values": 23159,
+      "coarse_config": {
+        "cells": 1280,
+        "dt_max": 0.03125,
+        "dt_scale": 0.0013020833333333333,
+        "time_growth": 600.0,
+        "event_dt": 0.03125,
+        "epsilon_t": 0.01,
+        "shrinking": true,
+        "atol": 1e-10,
+        "rtol": 1e-11
+      },
+      "fine_config": {
+        "cells": 1280,
+        "dt_max": 0.03125,
+        "dt_scale": 0.0013020833333333333,
+        "time_growth": 600.0,
+        "event_dt": 0.03125,
+        "epsilon_t": 0.001,
+        "shrinking": true,
+        "atol": 1e-10,
+        "rtol": 1e-11
+      },
+      "case_paths": {
+        "coarse": "q4/runs/q4_local_event_N1280_dt0.03125_startup768_shrinking_evdt0.03125_tol0.01.npz",
+        "fine": "q4/runs/q4_local_event_N1280_dt0.03125_startup768_shrinking_evdt0.03125_tol0.001.npz"
+      },
+      "coarse_path": "q4/runs/q4_local_event_N1280_dt0.03125_startup768_shrinking_evdt0.03125_tol0.01.npz",
+      "fine_path": "q4/runs/q4_local_event_N1280_dt0.03125_startup768_shrinking_evdt0.03125_tol0.001.npz",
+      "physical_C": {
+        "maximum": 0.0,
+        "time_s": 0.0,
+        "radius_cm": 0.0,
+        "values_compared": 41227
+      },
+      "reference_C": {
+        "maximum": 0.0,
+        "time_s": 0.0,
+        "xi": 0.0,
+        "values_compared": 309666
+      },
+      "surface_C": {
+        "maximum": 0.0,
+        "time_s": 0.0,
+        "values_compared": 3066
+      },
+      "C": {
+        "maximum": 0.0,
+        "maximum_by_view": {
+          "physical": 0.0,
+          "reference": 0.0,
+          "surface": 0.0,
+          "full_grid_maximum": 0.0
+        }
+      },
+      "physical_T": {
+        "maximum": 0.0,
+        "time_s": 0.0,
+        "radius_cm": 0.0,
+        "values_compared": 41227
+      },
+      "reference_T": {
+        "maximum": 0.0,
+        "time_s": 0.0,
+        "xi": 0.0,
+        "values_compared": 309666
+      },
+      "surface_T": {
+        "maximum": 0.0,
+        "time_s": 0.0,
+        "values_compared": 3066
+      },
+      "T": {
+        "maximum": 0.0,
+        "maximum_by_view": {
+          "physical": 0.0,
+          "reference": 0.0,
+          "surface": 0.0
+        }
+      },
+      "full_grid_maximum_C": {
+        "maximum": 0.0,
+        "time_s": 0.0
+      },
+      "finish_time_s": {
+        "coarse": 183913.49853515625,
+        "fine": 183913.49212646484,
+        "difference": 0.00640869140625
+      },
+      "at_own_endpoints_reference_C_difference": 3.290876876560489e-09,
+      "at_own_endpoints_surface_C_difference": 2.0336204942239533e-10,
+      "targets": {
+        "full_output_C": 2e-05,
+        "endpoint_s": 0.02
+      },
+      "C_passed": true,
+      "endpoint_passed": true,
+      "passed": true,
+      "interpretation": "Observed numerical refinement differences, not an exact-solution bound or measured-field validation"
+    },
+    {
+      "scope": "shrinking",
+      "report": "validation/q4_convergence_event_step.json",
+      "index": 0,
+      "coarse": "q4_local_event_step_N1280_dt0.03125_startup768_shrinking_evdt0.03125_tol0.001",
+      "fine": "q4_local_event_step_N1280_dt0.03125_startup768_shrinking_evdt0.015625_tol0.001",
+      "selected_grid_binding_verified": true,
+      "formal_dt_max": 0.03125,
+      "comparison_dt_max": [
+        0.03125,
+        0.03125
+      ],
+      "kind": "event_integration_step",
+      "comparison_times": 3066,
+      "comparison_radii": 21,
+      "comparison_reference_positions": 101,
+      "last_common_regular_time_s": 183900,
+      "interpolation_used": false,
+      "radius_histories_identical": true,
+      "physical_masks_identical": true,
+      "physical_inside_values": 41227,
+      "physical_outside_values": 23159,
+      "coarse_config": {
+        "cells": 1280,
+        "dt_max": 0.03125,
+        "dt_scale": 0.0013020833333333333,
+        "time_growth": 600.0,
+        "event_dt": 0.03125,
+        "epsilon_t": 0.001,
+        "shrinking": true,
+        "atol": 1e-10,
+        "rtol": 1e-11
+      },
+      "fine_config": {
+        "cells": 1280,
+        "dt_max": 0.03125,
+        "dt_scale": 0.0013020833333333333,
+        "time_growth": 600.0,
+        "event_dt": 0.015625,
+        "epsilon_t": 0.001,
+        "shrinking": true,
+        "atol": 1e-10,
+        "rtol": 1e-11
+      },
+      "case_paths": {
+        "coarse": "q4/runs/q4_local_event_step_N1280_dt0.03125_startup768_shrinking_evdt0.03125_tol0.001.npz",
+        "fine": "q4/runs/q4_local_event_step_N1280_dt0.03125_startup768_shrinking_evdt0.015625_tol0.001.npz"
+      },
+      "coarse_path": "q4/runs/q4_local_event_step_N1280_dt0.03125_startup768_shrinking_evdt0.03125_tol0.001.npz",
+      "fine_path": "q4/runs/q4_local_event_step_N1280_dt0.03125_startup768_shrinking_evdt0.015625_tol0.001.npz",
+      "physical_C": {
+        "maximum": 0.0,
+        "time_s": 0.0,
+        "radius_cm": 0.0,
+        "values_compared": 41227
+      },
+      "reference_C": {
+        "maximum": 0.0,
+        "time_s": 0.0,
+        "xi": 0.0,
+        "values_compared": 309666
+      },
+      "surface_C": {
+        "maximum": 0.0,
+        "time_s": 0.0,
+        "values_compared": 3066
+      },
+      "C": {
+        "maximum": 0.0,
+        "maximum_by_view": {
+          "physical": 0.0,
+          "reference": 0.0,
+          "surface": 0.0,
+          "full_grid_maximum": 0.0
+        }
+      },
+      "physical_T": {
+        "maximum": 0.0,
+        "time_s": 0.0,
+        "radius_cm": 0.0,
+        "values_compared": 41227
+      },
+      "reference_T": {
+        "maximum": 0.0,
+        "time_s": 0.0,
+        "xi": 0.0,
+        "values_compared": 309666
+      },
+      "surface_T": {
+        "maximum": 0.0,
+        "time_s": 0.0,
+        "values_compared": 3066
+      },
+      "T": {
+        "maximum": 0.0,
+        "maximum_by_view": {
+          "physical": 0.0,
+          "reference": 0.0,
+          "surface": 0.0
+        }
+      },
+      "full_grid_maximum_C": {
+        "maximum": 0.0,
+        "time_s": 0.0
+      },
+      "finish_time_s": {
+        "coarse": 183913.49212646484,
+        "fine": 183913.49212646484,
+        "difference": 0.0
+      },
+      "at_own_endpoints_reference_C_difference": 6.838973831690964e-13,
+      "at_own_endpoints_surface_C_difference": 1.0749040546542687e-13,
+      "targets": {
+        "full_output_C": 2e-05,
+        "endpoint_s": 0.02
+      },
+      "C_passed": true,
+      "endpoint_passed": true,
+      "passed": true,
+      "interpretation": "Observed numerical refinement differences, not an exact-solution bound or measured-field validation"
+    },
+    {
+      "scope": "fixed",
+      "report": "validation/q4_fixed_time_final.json",
+      "index": 0,
+      "coarse": "fixed_N1280_dt0.5_startup1over768_evdt0.05_tol0.01",
+      "fine": "fixed_N1280_dt0.25_startup1over768_evdt0.05_tol0.01",
+      "selected_grid_binding_verified": true,
+      "formal_dt_max": 0.25,
+      "comparison_dt_max": [
+        0.5,
+        0.25
+      ],
+      "kind": "fixed_time",
+      "comparison_times": 7791,
+      "comparison_radii": 21,
+      "comparison_reference_positions": 101,
+      "last_common_regular_time_s": 467400,
+      "interpolation_used": false,
+      "radius_histories_identical": true,
+      "physical_masks_identical": true,
+      "physical_inside_values": 163611,
+      "physical_outside_values": 0,
+      "coarse_config": {
+        "cells": 1280,
+        "dt_max": 0.5,
+        "dt_scale": 0.0013020833333333333,
+        "time_growth": 600.0,
+        "event_dt": 0.05,
+        "epsilon_t": 0.01,
+        "shrinking": false,
+        "atol": 1e-10,
+        "rtol": 1e-11
+      },
+      "fine_config": {
+        "cells": 1280,
+        "dt_max": 0.25,
+        "dt_scale": 0.0013020833333333333,
+        "time_growth": 600.0,
+        "event_dt": 0.05,
+        "epsilon_t": 0.01,
+        "shrinking": false,
+        "atol": 1e-10,
+        "rtol": 1e-11
+      },
+      "case_paths": {
+        "coarse": "q4/cases/fixed_N1280_dt0.5_startup1over768_evdt0.05_tol0.01.npz",
+        "fine": "q4/cases/fixed_N1280_dt0.25_startup1over768_evdt0.05_tol0.01.npz"
+      },
+      "coarse_path": "q4/cases/fixed_N1280_dt0.5_startup1over768_evdt0.05_tol0.01.npz",
+      "fine_path": "q4/cases/fixed_N1280_dt0.25_startup1over768_evdt0.05_tol0.01.npz",
+      "time_step_ratio": 2.0,
+      "physical_C": {
+        "maximum": 3.1710663113138082e-06,
+        "time_s": 52560.0,
+        "radius_cm": 0.0,
+        "values_compared": 163611
+      },
+      "reference_C": {
+        "maximum": 3.1710663113138082e-06,
+        "time_s": 52560.0,
+        "xi": 0.0,
+        "values_compared": 786891
+      },
+      "surface_C": {
+        "maximum": 1.3323320224856161e-06,
+        "time_s": 13920.0,
+        "values_compared": 7791
+      },
+      "C": {
+        "maximum": 3.1710663113138082e-06,
+        "maximum_by_view": {
+          "physical": 3.1710663113138082e-06,
+          "reference": 3.1710663113138082e-06,
+          "surface": 1.3323320224856161e-06,
+          "full_grid_maximum": 3.1710663113138082e-06
+        }
+      },
+      "physical_T": {
+        "maximum": 9.655474656256047e-05,
+        "time_s": 13560.0,
+        "radius_cm": 1.9,
+        "values_compared": 163611
+      },
+      "reference_T": {
+        "maximum": 9.68997250083703e-05,
+        "time_s": 13560.0,
+        "xi": 0.96,
+        "values_compared": 786891
+      },
+      "surface_T": {
+        "maximum": 9.230238458712847e-05,
+        "time_s": 13560.0,
+        "values_compared": 7791
+      },
+      "T": {
+        "maximum": 9.68997250083703e-05,
+        "maximum_by_view": {
+          "physical": 9.655474656256047e-05,
+          "reference": 9.68997250083703e-05,
+          "surface": 9.230238458712847e-05
+        }
+      },
+      "full_grid_maximum_C": {
+        "maximum": 3.1710663113138082e-06,
+        "time_s": 52560.0
+      },
+      "finish_time_s": {
+        "coarse": 467439.90234375,
+        "fine": 467439.169921875,
+        "difference": 0.732421875
+      },
+      "at_own_endpoints_reference_C_difference": 4.705497241852541e-10,
+      "at_own_endpoints_surface_C_difference": 3.505760265420932e-11,
+      "targets": {
+        "full_output_C": 2e-05,
+        "endpoint_s": 1.0
+      },
+      "C_passed": true,
+      "endpoint_passed": true,
+      "passed": true,
+      "interpretation": "Observed numerical refinement differences, not an exact-solution bound or measured-field validation"
+    },
+    {
+      "scope": "fixed",
+      "report": "validation/q4_fixed_space.json",
+      "index": 0,
+      "coarse": "fixed_N1280_dt0.5_startup1over768_evdt0.05_tol0.01",
+      "fine": "fixed_N1600_dt0.5_startup1over768_evdt0.05_tol0.01",
+      "selected_grid_binding_verified": true,
+      "formal_dt_max": 0.25,
+      "comparison_dt_max": [
+        0.5,
+        0.5
+      ],
+      "kind": "fixed_space",
+      "comparison_times": 7791,
+      "comparison_radii": 21,
+      "comparison_reference_positions": 101,
+      "last_common_regular_time_s": 467400,
+      "interpolation_used": false,
+      "radius_histories_identical": true,
+      "physical_masks_identical": true,
+      "physical_inside_values": 163611,
+      "physical_outside_values": 0,
+      "coarse_config": {
+        "cells": 1280,
+        "dt_max": 0.5,
+        "dt_scale": 0.0013020833333333333,
+        "time_growth": 600.0,
+        "event_dt": 0.05,
+        "epsilon_t": 0.01,
+        "shrinking": false,
+        "atol": 1e-10,
+        "rtol": 1e-11
+      },
+      "fine_config": {
+        "cells": 1600,
+        "dt_max": 0.5,
+        "dt_scale": 0.0013020833333333333,
+        "time_growth": 600.0,
+        "event_dt": 0.05,
+        "epsilon_t": 0.01,
+        "shrinking": false,
+        "atol": 1e-10,
+        "rtol": 1e-11
+      },
+      "case_paths": {
+        "coarse": "q4/cases/fixed_N1280_dt0.5_startup1over768_evdt0.05_tol0.01.npz",
+        "fine": "q4/cases/fixed_N1600_dt0.5_startup1over768_evdt0.05_tol0.01.npz"
+      },
+      "coarse_path": "q4/cases/fixed_N1280_dt0.5_startup1over768_evdt0.05_tol0.01.npz",
+      "fine_path": "q4/cases/fixed_N1600_dt0.5_startup1over768_evdt0.05_tol0.01.npz",
+      "physical_C": {
+        "maximum": 5.060023902547783e-06,
+        "time_s": 60.0,
+        "radius_cm": 2.0,
+        "values_compared": 163611
+      },
+      "reference_C": {
+        "maximum": 1.1552104008050179e-05,
+        "time_s": 120.0,
+        "xi": 0.97,
+        "values_compared": 786891
+      },
+      "surface_C": {
+        "maximum": 5.060023902547783e-06,
+        "time_s": 60.0,
+        "values_compared": 7791
+      },
+      "C": {
+        "maximum": 1.1552104008050179e-05,
+        "maximum_by_view": {
+          "physical": 5.060023902547783e-06,
+          "reference": 1.1552104008050179e-05,
+          "surface": 5.060023902547783e-06,
+          "full_grid_maximum": 4.963369995003575e-07
+        }
+      },
+      "physical_T": {
+        "maximum": 1.4851065657239815e-06,
+        "time_s": 2700.0,
+        "radius_cm": 0.0,
+        "values_compared": 163611
+      },
+      "reference_T": {
+        "maximum": 1.4851065657239815e-06,
+        "time_s": 2700.0,
+        "xi": 0.0,
+        "values_compared": 786891
+      },
+      "surface_T": {
+        "maximum": 2.2836690050098696e-07,
+        "time_s": 2940.0,
+        "values_compared": 7791
+      },
+      "T": {
+        "maximum": 1.4851065657239815e-06,
+        "maximum_by_view": {
+          "physical": 1.4851065657239815e-06,
+          "reference": 1.4851065657239815e-06,
+          "surface": 2.2836690050098696e-07
+        }
+      },
+      "full_grid_maximum_C": {
+        "maximum": 4.963369995003575e-07,
+        "time_s": 19800.0
+      },
+      "finish_time_s": {
+        "coarse": 467439.90234375,
+        "fine": 467439.931640625,
+        "difference": 0.029296875
+      },
+      "at_own_endpoints_reference_C_difference": 4.0145415536319007e-07,
+      "at_own_endpoints_surface_C_difference": 2.2581621988981837e-10,
+      "targets": {
+        "full_output_C": 2e-05,
+        "endpoint_s": 1.0
+      },
+      "C_passed": true,
+      "endpoint_passed": true,
+      "passed": true,
+      "interpretation": "Observed numerical refinement differences, not an exact-solution bound or measured-field validation"
+    }
+  ],
+  "source_hashes": {
+    "validation/q4_convergence_time.json": "1f624acacb37209ca82a2dba8a951db6666b5d600ccb839ac1bd2070764e6b69",
+    "validation/q4_convergence_space.json": "31a82058fd60a087a9bc978e0179c1957d3ff0a0451472165b4729678866243d",
+    "validation/q4_convergence_startup.json": "a9a14175ac049346758bf946de807e8c33ec5e42bd0480e92b118948b69e6286",
+    "validation/q4_convergence_picard.json": "efaa098e2000d16e88c54b6af3a865205eee894e7ffb93fb0a18dffbdd7eeb5d",
+    "validation/q4_convergence_event.json": "ee0a7073ad4710416f246e2bf95fa012a234ee9aa90aebba353ac629971d88e1",
+    "validation/q4_convergence_event_step.json": "f2f3361d3af48cccc4b3da41314acaa2d713f8961eae2e57df31a03e39090a51",
+    "validation/q4_fixed_time_final.json": "e1c993833881dba198ef9f9cafbb63c785103e50bd7b66f65aa2021222807af2",
+    "validation/q4_fixed_space.json": "86c60d5c1d7e5e991e9f45357684b0d0f3c286b579b7bc547fb89115ff0feef4",
+    "q4/solution.npz": "33f1192de2ea75440667f2c616b7134c388f0829c62673fb94f59b0ae8dd6ce2",
+    "q4/runs/q4_N1280_dt0.03125_startup768_shrinking_evdt0.05_tol0.01.npz": "33f1192de2ea75440667f2c616b7134c388f0829c62673fb94f59b0ae8dd6ce2",
+    "q4/fixed_control.npz": "7cbb488fb4bd7231b2f750afd6f10499c997f48650824f774858c555050877e5",
+    "q4/cases/fixed_N1280_dt0.25_startup1over768_evdt0.05_tol0.01.npz": "7cbb488fb4bd7231b2f750afd6f10499c997f48650824f774858c555050877e5",
+    "q4/runs/q4_N1280_dt0.0625_startup768_shrinking_evdt0.05_tol0.01.npz": "7133538e3a3e5be7104372444f27aab2506e434f73f8597646d5b82169eba9d4",
+    "q4/runs/q4_N1280_dt0.5_startup768_shrinking_evdt0.05_tol0.01.npz": "67fea2ac019fd0c0446205457bfbd926dbbd2669d98f38869b5468addf9d09bc",
+    "q4/runs/q4_N1600_dt0.5_startup768_shrinking_evdt0.05_tol0.01.npz": "a990507c8a82c1076945d1becd224bcab85ab6ad5b4e36fe598ab658e5a390e7",
+    "q4/runs/q4_N1280_dt0.5_startup1536_shrinking_evdt0.05_tol0.01.npz": "50fb6d67aea949f388a4f51878732963b22cadce48c2ad5f64b114adff4c2b50",
+    "q4/runs/q4_N1280_dt0.5_startup768_shrinking_evdt0.05_tol0.01_tight.npz": "306cdba1eb194c95090dd8a40f70c290ee6523def56822d381e8d1e1a8f21727",
+    "q4/runs/q4_local_event_N1280_dt0.03125_startup768_shrinking_evdt0.03125_tol0.01.npz": "1bcd4759731c69ee0a6a9fd750edb46fa2698fe3d0caf67a0df90ba28e4a90cc",
+    "q4/runs/q4_local_event_N1280_dt0.03125_startup768_shrinking_evdt0.03125_tol0.001.npz": "bcd8870890e2b96ee40ab75817e84a388cba5c66dc9bf23c6e9de663103505a1",
+    "q4/runs/q4_local_event_step_N1280_dt0.03125_startup768_shrinking_evdt0.03125_tol0.001.npz": "1f5ca7530fc56d3636ce4e37c8662c60f69e72c1b57a23538fc4c5467cc446c3",
+    "q4/runs/q4_local_event_step_N1280_dt0.03125_startup768_shrinking_evdt0.015625_tol0.001.npz": "8df5e511e7d8eea01aad3980a831613a1249bc45d18353f44806f3c783d0e203",
+    "q4/cases/fixed_N1280_dt0.5_startup1over768_evdt0.05_tol0.01.npz": "e52580e052395ad7ba30f592b3fa45416164f35744284588887abe7fa37f923e",
+    "q4/cases/fixed_N1600_dt0.5_startup1over768_evdt0.05_tol0.01.npz": "a6f660998a9c4996cab690c485de0b3b5c7e1cfcb65ce3b0f1ac5b5b7d3fe318"
+  },
+  "checked_case_count": 15,
+  "required_checks_covered": [
+    [
+      "fixed",
+      "space"
+    ],
+    [
+      "fixed",
+      "time"
+    ],
+    [
+      "shrinking",
+      "event_integration_step"
+    ],
+    [
+      "shrinking",
+      "event_tolerance"
+    ],
+    [
+      "shrinking",
+      "picard_tolerance"
+    ],
+    [
+      "shrinking",
+      "space"
+    ],
+    [
+      "shrinking",
+      "startup"
+    ],
+    [
+      "shrinking",
+      "time"
+    ]
+  ],
+  "note": "Actual numerical differences on the stated cases, not a strict total error bound"
+}

@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "execution_environment": "Windows, Python 3.12.14",
+  "staged_checkout_isolated_from_original": true,
+  "requested_named_files_verified": 38,
+  "all_question_figure_and_table_directories_present": true,
+  "all_four_questions_reuse_saved_states": true,
+  "q2_reexport_preserves_q3_native_seed_bytes": true,
+  "new_fixed_radius_entry_uses_accepted_config": true,
+  "numerical_source_input_and_npz_bytes_preserved_in_git_checkout": true,
+  "legacy_csv_svg_difference_is_line_endings_only": true,
+  "checks": {
+    "q3": {
+      "acceptance": true,
+      "solution_and_deliverables": true,
+      "saved_independent_reproduction_checked": true
+    },
+    "q4": {
+      "acceptance": true,
+      "solution_and_deliverables": true,
+      "saved_independent_reproduction_checked": true
+    }
+  },
+  "full_drying_integrations_repeated_for_publication": false,
+  "commands": [
+    "python -B run_all.py --question all --compute-only",
+    "python -B run_all.py --question 3 --validate --no-plots",
+    "python -B run_all.py --question 4 --validate --no-plots",
+    "python -B validation/q3_reproduction.py",
+    "python -B validation/q4_reproduction.py"
+  ],
+  "formal_state_sha256": {
+    "q1/solution.npz": "b6030faf4b1654b980d5bfa78830a6d4983a93004413d5194c70e443efc4065e",
+    "q2/solution.npz": "5c9e894fe77b124467c4c4e5c84300531b7355103369a3b0c70bc78d72958cb9",
+    "q3/solution.npz": "123b01ae4eb8fe7914ca4dafe3a706c1d48daf4cca6964d9bb2860a72a1c24dd",
+    "q4/solution.npz": "33f1192de2ea75440667f2c616b7134c388f0829c62673fb94f59b0ae8dd6ce2"
+  }
+}

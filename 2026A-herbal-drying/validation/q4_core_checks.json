@@ -1,0 +1,39 @@
+{
+  "core": {
+    "passed": true,
+    "radius_source_sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+    "radius_knots_checked": 145,
+    "exact_plateau_intervals_checked": 92,
+    "maximum_interpolation_overshoot_m": 0.0,
+    "radius_after_last_data_m": 0.01198,
+    "fixed_radius_dense_reference": {
+      "s=1": {
+        "T_max_difference": 0.0,
+        "C_max_difference": 0.0,
+        "loss_difference": 1.3552527156068805e-20,
+        "same_step_count": 8,
+        "independent_dense_reference": true
+      },
+      "s=0.6": {
+        "T_max_difference": 0.0,
+        "C_max_difference": 0.0,
+        "loss_difference": 6.776263578034403e-20,
+        "same_step_count": 8,
+        "independent_dense_reference": true
+      }
+    },
+    "closed_uniform_shrinking_field_unchanged": true,
+    "closed_loss": 0.0,
+    "restart": {
+      "T": 0.0,
+      "C": 0.0,
+      "loss": 2.6020852139652106e-18
+    },
+    "reference_weight_balance_residual": 3.877106968808164e-16,
+    "outside_1_2_cm_blank_at_R_1_198_cm": true,
+    "actual_surface_reconstructed_separately": true,
+    "inside_1_2_cm_matches_surface_on_R_1_2_cm_plateau": true,
+    "interior_global_maximum_location_scaled": true,
+    "interpretation": "Discrete equation, mask and serialization checks; not experimental validation"
+  }
+}

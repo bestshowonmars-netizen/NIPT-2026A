@@ -1,0 +1,29 @@
+{
+  "core": {
+    "passed": true,
+    "source": "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\q2\\solution.npz",
+    "step_s": 0.25,
+    "uninterrupted_vs_save_reload": {
+      "T": 0.0,
+      "C": 0.0,
+      "loss": 1.0408340855860843e-17
+    },
+    "old_vs_new_kernel": {
+      "T": 0.0,
+      "C": 0.0,
+      "loss": 3.469446951953614e-18
+    },
+    "absolute_time_probe": {
+      "from_s": 10800.0,
+      "to_s": 14400.0,
+      "T": 0.0,
+      "C": 0.0,
+      "loss": 3.0531133177191805e-16
+    },
+    "water_balance_including_q2": 8.79296635503124e-13,
+    "inputs_unchanged": true,
+    "interior_maximum_detected": true,
+    "restored_prefix_loss": 1.1720644646187763,
+    "interpretation": "Same equations and same step schedule; serialization/kernel equivalence, not independent truth"
+  }
+}
