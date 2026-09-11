@@ -1,0 +1,352 @@
+[
+  {
+    "q": 1,
+    "kind": "space",
+    "required": false,
+    "coarse": {
+      "N": 640,
+      "dt": 0.0009765625
+    },
+    "fine": {
+      "N": 960,
+      "dt": 0.0009765625
+    },
+    "T": {
+      "maximum": 4.982277573617466e-06,
+      "time_s": 1569,
+      "radius_cm": 0.0
+    },
+    "C": {
+      "maximum": 1.1625314688679111e-05,
+      "time_s": 1,
+      "radius_cm": 2.0
+    },
+    "limit": 1e-05,
+    "passed": false
+  },
+  {
+    "q": 1,
+    "kind": "space",
+    "required": true,
+    "coarse": {
+      "N": 960,
+      "dt": 0.0009765625
+    },
+    "fine": {
+      "N": 1280,
+      "dt": 0.0009765625
+    },
+    "T": {
+      "maximum": 1.852901618804026e-06,
+      "time_s": 1573,
+      "radius_cm": 0.0
+    },
+    "C": {
+      "maximum": 4.069627708602752e-06,
+      "time_s": 1,
+      "radius_cm": 2.0
+    },
+    "limit": 1e-05,
+    "passed": true
+  },
+  {
+    "q": 1,
+    "kind": "space",
+    "required": true,
+    "coarse": {
+      "N": 1280,
+      "dt": 0.0009765625
+    },
+    "fine": {
+      "N": 1600,
+      "dt": 0.0009765625
+    },
+    "T": {
+      "maximum": 8.942418503465888e-07,
+      "time_s": 1576,
+      "radius_cm": 0.0
+    },
+    "C": {
+      "maximum": 1.883791001411339e-06,
+      "time_s": 1,
+      "radius_cm": 2.0
+    },
+    "limit": 1e-05,
+    "passed": true
+  },
+  {
+    "q": 1,
+    "kind": "time",
+    "coarse": {
+      "N": 1280,
+      "dt": 0.001953125
+    },
+    "fine": {
+      "N": 1280,
+      "dt": 0.0013020833333333333
+    },
+    "T": {
+      "maximum": 3.6565476193572977e-06,
+      "time_s": 1265,
+      "radius_cm": 0.0
+    },
+    "C": {
+      "maximum": 2.6532254406852473e-06,
+      "time_s": 1,
+      "radius_cm": 2.0
+    },
+    "required": true,
+    "limit": 1e-05,
+    "passed": true
+  },
+  {
+    "q": 1,
+    "kind": "time",
+    "coarse": {
+      "N": 1280,
+      "dt": 0.0013020833333333333
+    },
+    "fine": {
+      "N": 1280,
+      "dt": 0.0009765625
+    },
+    "T": {
+      "maximum": 1.8285561509401305e-06,
+      "time_s": 1265,
+      "radius_cm": 0.0
+    },
+    "C": {
+      "maximum": 1.3264277973767946e-06,
+      "time_s": 1,
+      "radius_cm": 2.0
+    },
+    "required": true,
+    "limit": 1e-05,
+    "passed": true
+  },
+  {
+    "q": 1,
+    "kind": "joint",
+    "coarse": {
+      "N": 960,
+      "dt": 0.0013020833333333333
+    },
+    "fine": {
+      "N": 1600,
+      "dt": 0.0009765625
+    },
+    "T": {
+      "maximum": 4.449122798177996e-06,
+      "time_s": 1489,
+      "radius_cm": 0.0
+    },
+    "C": {
+      "maximum": 4.781568469613973e-06,
+      "time_s": 3,
+      "radius_cm": 2.0
+    },
+    "required": true,
+    "limit": 2e-05,
+    "passed": true
+  },
+  {
+    "q": 1,
+    "kind": "picard",
+    "coarse": {
+      "N": 960,
+      "dt": 0.0013020833333333333
+    },
+    "fine": {
+      "N": 960,
+      "dt": 0.0013020833333333333
+    },
+    "T": {
+      "maximum": 0.0,
+      "time_s": 0,
+      "radius_cm": 0.0
+    },
+    "C": {
+      "maximum": 1.0658141036401503e-14,
+      "time_s": 526,
+      "radius_cm": 2.0
+    },
+    "required": true,
+    "limit": 1e-06,
+    "passed": true
+  },
+  {
+    "q": 2,
+    "kind": "space",
+    "required": false,
+    "coarse": {
+      "N": 640,
+      "dt": 0.0009765625
+    },
+    "fine": {
+      "N": 960,
+      "dt": 0.0009765625
+    },
+    "T": {
+      "maximum": 5.096422455608263e-06,
+      "time_s": 2032,
+      "radius_cm": 0.0
+    },
+    "C": {
+      "maximum": 1.0131563496607043e-05,
+      "time_s": 1,
+      "radius_cm": 2.0
+    },
+    "limit": 1e-05,
+    "passed": false
+  },
+  {
+    "q": 2,
+    "kind": "space",
+    "required": true,
+    "coarse": {
+      "N": 960,
+      "dt": 0.0009765625
+    },
+    "fine": {
+      "N": 1280,
+      "dt": 0.0009765625
+    },
+    "T": {
+      "maximum": 1.8977244735651766e-06,
+      "time_s": 2037,
+      "radius_cm": 0.0
+    },
+    "C": {
+      "maximum": 3.546671464516038e-06,
+      "time_s": 1,
+      "radius_cm": 2.0
+    },
+    "limit": 1e-05,
+    "passed": true
+  },
+  {
+    "q": 2,
+    "kind": "space",
+    "required": true,
+    "coarse": {
+      "N": 1280,
+      "dt": 0.0009765625
+    },
+    "fine": {
+      "N": 1600,
+      "dt": 0.0009765625
+    },
+    "T": {
+      "maximum": 9.166268455373938e-07,
+      "time_s": 2041,
+      "radius_cm": 0.0
+    },
+    "C": {
+      "maximum": 1.6417118082756588e-06,
+      "time_s": 1,
+      "radius_cm": 2.0
+    },
+    "limit": 1e-05,
+    "passed": true
+  },
+  {
+    "q": 2,
+    "kind": "time",
+    "coarse": {
+      "N": 1280,
+      "dt": 0.001953125
+    },
+    "fine": {
+      "N": 1280,
+      "dt": 0.0013020833333333333
+    },
+    "T": {
+      "maximum": 3.6401343663783337e-06,
+      "time_s": 1497,
+      "radius_cm": 0.0
+    },
+    "C": {
+      "maximum": 2.479726799897719e-06,
+      "time_s": 1,
+      "radius_cm": 2.0
+    },
+    "required": true,
+    "limit": 1e-05,
+    "passed": true
+  },
+  {
+    "q": 2,
+    "kind": "time",
+    "coarse": {
+      "N": 1280,
+      "dt": 0.0013020833333333333
+    },
+    "fine": {
+      "N": 1280,
+      "dt": 0.0009765625
+    },
+    "T": {
+      "maximum": 1.8203219838142104e-06,
+      "time_s": 1497,
+      "radius_cm": 0.0
+    },
+    "C": {
+      "maximum": 1.2396900745947903e-06,
+      "time_s": 1,
+      "radius_cm": 2.0
+    },
+    "required": true,
+    "limit": 1e-05,
+    "passed": true
+  },
+  {
+    "q": 2,
+    "kind": "joint",
+    "coarse": {
+      "N": 960,
+      "dt": 0.0013020833333333333
+    },
+    "fine": {
+      "N": 1600,
+      "dt": 0.0009765625
+    },
+    "T": {
+      "maximum": 4.423356415372837e-06,
+      "time_s": 1554,
+      "radius_cm": 0.0
+    },
+    "C": {
+      "maximum": 4.114017368550549e-06,
+      "time_s": 3,
+      "radius_cm": 2.0
+    },
+    "required": true,
+    "limit": 2e-05,
+    "passed": true
+  },
+  {
+    "q": 2,
+    "kind": "picard",
+    "coarse": {
+      "N": 960,
+      "dt": 0.0013020833333333333
+    },
+    "fine": {
+      "N": 960,
+      "dt": 0.0013020833333333333
+    },
+    "T": {
+      "maximum": 2.2737367544323206e-13,
+      "time_s": 3208,
+      "radius_cm": 2.0
+    },
+    "C": {
+      "maximum": 2.0650148258027912e-14,
+      "time_s": 2119,
+      "radius_cm": 2.0
+    },
+    "required": true,
+    "limit": 1e-06,
+    "passed": true
+  }
+]

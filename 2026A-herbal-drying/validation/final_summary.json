@@ -1,0 +1,37 @@
+{
+  "strict_refinement_passed": true,
+  "required_comparisons": 12,
+  "full_result_values_checked": 529200,
+  "appendix_reproduction": [
+    {
+      "question": 1,
+      "temperature_K_max_difference": 5.684341886080802e-14,
+      "moisture_max_difference": 4.440892098500626e-16,
+      "all_excel_cells_identical": true,
+      "cells_compared_including_headers": 79244,
+      "independent_of_main_modules": true
+    },
+    {
+      "question": 2,
+      "temperature_K_max_difference": 5.684341886080802e-14,
+      "moisture_max_difference": 4.440892098500626e-16,
+      "all_excel_cells_identical": true,
+      "cells_compared_including_headers": 475244,
+      "independent_of_main_modules": true
+    }
+  ],
+  "dense_sampling_agreement": [
+    {
+      "question": 1,
+      "temperature_K": 5.684341886080802e-14,
+      "moisture": 4.440892098500626e-16
+    },
+    {
+      "question": 2,
+      "temperature_K": 5.684341886080802e-14,
+      "moisture": 4.440892098500626e-16
+    }
+  ],
+  "input_copies_match_sources": true,
+  "question_count": 2
+}

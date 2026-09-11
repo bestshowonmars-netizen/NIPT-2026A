@@ -1,0 +1,17 @@
+[
+  {
+    "source": "附件1.xlsx",
+    "project_copy": "data/attachment1.xlsx",
+    "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7"
+  },
+  {
+    "source": "附件3/result1.xlsx",
+    "project_copy": "data/templates/result1_template.xlsx",
+    "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
+  },
+  {
+    "source": "附件3/result2.xlsx",
+    "project_copy": "data/templates/result2_template.xlsx",
+    "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
+  }
+]

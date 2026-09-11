@@ -1,0 +1,22 @@
+{
+  "question": 2,
+  "end_time": 10800,
+  "radius": 0.02,
+  "h": 25.0,
+  "hm": 8e-07,
+  "atol": 1e-10,
+  "rtol": 1e-11,
+  "max_iterations": 60,
+  "initial_T": 301.15,
+  "initial_C": 2.55,
+  "cells": 160,
+  "dt_max": 0.5,
+  "sample_count": 21,
+  "elapsed_seconds": 0.760815099998581,
+  "steps": 21600,
+  "iterations": 64800,
+  "rejections": 0,
+  "damped_iterations": 0,
+  "max_scaled_residual": 0.00012494005651018483,
+  "max_water_balance_residual": 2.5757174171303632e-14
+}

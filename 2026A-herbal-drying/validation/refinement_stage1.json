@@ -1,0 +1,138 @@
+[
+  {
+    "q": 1,
+    "kind": "space",
+    "N": 640,
+    "dt_scale": 0.0078125,
+    "growth": 600,
+    "T": {
+      "maximum": 5.1825988293785485e-05,
+      "time_s": 1589,
+      "radius_cm": 0.0
+    },
+    "C": {
+      "maximum": 1.4604320665245751e-05,
+      "time_s": 1,
+      "radius_cm": 2.0
+    }
+  },
+  {
+    "q": 1,
+    "kind": "space",
+    "N": 1280,
+    "dt_scale": 0.0078125,
+    "growth": 600,
+    "T": {
+      "maximum": 1.5584480763664033e-05,
+      "time_s": 1662,
+      "radius_cm": 0.0
+    },
+    "C": {
+      "maximum": 3.651773851753859e-06,
+      "time_s": 1,
+      "radius_cm": 2.0
+    }
+  },
+  {
+    "q": 1,
+    "kind": "time",
+    "N": 1280,
+    "dt_scale": 0.00390625,
+    "growth": 600,
+    "T": {
+      "maximum": 3.236488095126333e-05,
+      "time_s": 1490,
+      "radius_cm": 0.0
+    },
+    "C": {
+      "maximum": 1.5888208598102693e-05,
+      "time_s": 1,
+      "radius_cm": 2.0
+    }
+  },
+  {
+    "q": 1,
+    "kind": "time",
+    "N": 1280,
+    "dt_scale": 0.001953125,
+    "growth": 600,
+    "T": {
+      "maximum": 1.6295413729494612e-05,
+      "time_s": 1492,
+      "radius_cm": 0.0
+    },
+    "C": {
+      "maximum": 7.947056611889991e-06,
+      "time_s": 1,
+      "radius_cm": 2.0
+    }
+  },
+  {
+    "q": 2,
+    "kind": "space",
+    "N": 640,
+    "dt_scale": 0.0078125,
+    "growth": 600,
+    "T": {
+      "maximum": 5.3918239018457825e-05,
+      "time_s": 2064,
+      "radius_cm": 0.0
+    },
+    "C": {
+      "maximum": 1.8340072421185738e-05,
+      "time_s": 5779,
+      "radius_cm": 0.0
+    }
+  },
+  {
+    "q": 2,
+    "kind": "space",
+    "N": 1280,
+    "dt_scale": 0.0078125,
+    "growth": 600,
+    "T": {
+      "maximum": 1.6219577503306937e-05,
+      "time_s": 2131,
+      "radius_cm": 0.0
+    },
+    "C": {
+      "maximum": 5.42056186247919e-06,
+      "time_s": 5897,
+      "radius_cm": 0.0
+    }
+  },
+  {
+    "q": 2,
+    "kind": "time",
+    "N": 1280,
+    "dt_scale": 0.00390625,
+    "growth": 600,
+    "T": {
+      "maximum": 0.0002465886914251314,
+      "time_s": 6589,
+      "radius_cm": 0.0
+    },
+    "C": {
+      "maximum": 1.4849238256786634e-05,
+      "time_s": 1,
+      "radius_cm": 2.0
+    }
+  },
+  {
+    "q": 2,
+    "kind": "time",
+    "N": 1280,
+    "dt_scale": 0.001953125,
+    "growth": 600,
+    "T": {
+      "maximum": 0.0001707679638798254,
+      "time_s": 9120,
+      "radius_cm": 1.9
+    },
+    "C": {
+      "maximum": 7.427369469681366e-06,
+      "time_s": 1,
+      "radius_cm": 2.0
+    }
+  }
+]

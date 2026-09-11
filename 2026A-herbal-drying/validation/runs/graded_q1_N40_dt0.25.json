@@ -1,0 +1,23 @@
+{
+  "question": 1,
+  "end_time": 1800,
+  "radius": 0.02,
+  "h": 25.0,
+  "hm": 8e-07,
+  "atol": 1e-10,
+  "rtol": 1e-11,
+  "max_iterations": 60,
+  "initial_T": 301.15,
+  "initial_C": 2.55,
+  "mesh": "quadratic_surface_graded",
+  "cells": 40,
+  "dt_max": 0.25,
+  "sample_count": 21,
+  "elapsed_seconds": 10.423301099999662,
+  "steps": 7200,
+  "iterations": 28800,
+  "rejections": 0,
+  "damped_iterations": 0,
+  "max_scaled_residual": 1.7904264863480686e-05,
+  "max_water_balance_residual": 3.9968028886505635e-15
+}

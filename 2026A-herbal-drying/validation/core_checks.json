@@ -1,0 +1,9 @@
+{
+  "input_interpolation": "241 observations, all knots, midpoint and post-4h convention checked",
+  "material_formulas": "appendices 2 and 3 checked independently, temperature in K",
+  "center_reconstruction": "even quadratic volume-average reconstruction checked",
+  "robin_surface": "surface reconstruction satisfies both half-cell and Robin flux",
+  "equilibrium": "both nonlinear models preserve uniform matched-environment states",
+  "closed_boundary_mass_error": 2.710505431213761e-16,
+  "linear_solver": "increment Thomas solver agrees with independent dense system"
+}

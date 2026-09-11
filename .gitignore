@@ -1,0 +1,8 @@
+# Reinstallable local dependencies and machine-specific caches
+.runtime/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+Thumbs.db
