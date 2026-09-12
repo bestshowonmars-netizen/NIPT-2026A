@@ -1,0 +1,17 @@
+.texlive/
+build/
+TinyTeX-windows-*.exe
+main_v0_1.zip
+overleaf_source/
+q1/*.npz
+q1/*.json
+q1/tables/
+q3/runs/
+q3/tables/
+q3/figures/fig8_q3_convergence.pdf
+q4/*.tex
+analysis/*.alignment*.json
+analysis/*.alignment*.svg
+analysis/*.collision-audit.json
+recalculation/__pycache__/
+recalculation/data/
