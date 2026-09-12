@@ -6,6 +6,8 @@
 
 ## 先看哪些文件
 
+- [第3问解答](第3问解答.md)、[第4问解答](第4问解答.md)：2026-09-12重算后的独立解答，含方法、规定表格及新版配图。
+- [本轮重算与验证说明](validation/redone_20260912/验证说明.md)：第三问57.4723 h、第四问51.0871 h，均为中心最后达标。重算数组与原验收解一致；第四问固定半径对照和原始加密矩阵本轮仅复核保存证据，未全量重算。数值核查不代表模型假设已经得到实验验证。
 - `submission_results/result1.xlsx`、`result2.xlsx`：题目要求的完整结果，两个工作表均为数值四位小数。
 - `submission_results/result3.xlsx`：第三问单工作表结果，每60 s、每0.1 cm输出含水率。
 - `submission_results/result4.xlsx`：第四问每60 s、固定物理位置每0.1 cm输出，域外留空，W列单独保存实际移动表面的含水率。
@@ -47,6 +49,10 @@ python -B validation/result_checks.py --core
 python -B validation/result_checks.py
 python -B paper_appendix_minimal/minimal_example.py
 ```
+
+2026-09-12第三、四问的重算档案和新版解答导出入口见
+[本轮复现说明](validation/redone_20260912/README.md)。常规复现继续使用上面的统一入口；
+归档中保留的单次计算驱动及缓存回放检查有额外运行条件，不作为默认入口。
 
 默认运行复用已经保存且配置匹配的正式高精度数组，重新生成表格、图和解释。第一、二问修改求解器后应使用 `--recompute`；第三问缓存另检查源文件、输入和配置指纹，不匹配即重算。`--recompute` 强制重新求解，`--compute-only` 只计算，`--no-plots` 生成结果表但不画图。第一、二问 `--validate` 运行严格加密与检查；第三问 `--validate` 核对续算接口、完整数组和交付文件，独立加密矩阵通过 `q3/convergence_test.py` 运行，具体命令见第三问验证报告。`python -B validation/q3_report.py` 重生成该报告与配图。计算时长由CPU决定，多组加密与独立附录复现会明显长于单次求解。
 

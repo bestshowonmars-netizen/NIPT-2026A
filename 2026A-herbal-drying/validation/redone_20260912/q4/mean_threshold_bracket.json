@@ -1,0 +1,16 @@
+{
+  "threshold": 0.15,
+  "criterion": "mean_C < 0.15; comparison only, not the formal all-domain criterion",
+  "t_minus_s": 125880.0,
+  "t_plus_s": 125940.0,
+  "mean_C_minus": 0.15000698191075554,
+  "mean_C_plus": 0.14995571261008023,
+  "global_max_C_minus": 0.19749719005289412,
+  "global_max_C_plus": 0.19741852898770795,
+  "width_s": 60.0,
+  "advance_vs_formal_endpoint_interval_h": [
+    16.103749593098957,
+    16.120416259765626
+  ],
+  "method": "First threshold-crossing pair among saved 60 s outputs; no interpolated or sub-minute root claimed"
+}

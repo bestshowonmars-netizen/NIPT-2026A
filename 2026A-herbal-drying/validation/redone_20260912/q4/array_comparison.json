@@ -1,0 +1,427 @@
+{
+  "arrays": {
+    "centers": {
+      "shape": [
+        1280
+      ],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "environment": {
+      "shape": [
+        241,
+        3
+      ],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "event_anchor_C": {
+      "shape": [
+        1280
+      ],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "event_anchor_T": {
+      "shape": [
+        1280
+      ],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "event_anchor_loss_cumulative": {
+      "shape": [],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "event_anchor_radius_m": {
+      "shape": [],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "event_anchor_time_s": {
+      "shape": [],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "event_lower_C": {
+      "shape": [
+        1280
+      ],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "event_lower_T": {
+      "shape": [
+        1280
+      ],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "event_lower_loss_cumulative": {
+      "shape": [],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "event_lower_radius_m": {
+      "shape": [],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "event_lower_time_s": {
+      "shape": [],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "event_trace": {
+      "shape": [
+        15,
+        4
+      ],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "event_upper_C": {
+      "shape": [
+        1280
+      ],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "event_upper_T": {
+      "shape": [
+        1280
+      ],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "event_upper_time_s": {
+      "shape": [],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "faces": {
+      "shape": [
+        1281
+      ],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "final_C": {
+      "shape": [
+        1280
+      ],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "final_T": {
+      "shape": [
+        1280
+      ],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "final_physical_centers": {
+      "shape": [
+        1280
+      ],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "final_physical_faces": {
+      "shape": [
+        1281
+      ],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "final_radius_m": {
+      "shape": [],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "initial_C": {
+      "shape": [
+        1280
+      ],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "initial_T": {
+      "shape": [
+        1280
+      ],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "initial_loss_cumulative": {
+      "shape": [],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "initial_time_s": {
+      "shape": [],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "logs": {
+      "shape": [
+        3067,
+        9
+      ],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "loss_cumulative": {
+      "shape": [
+        3067
+      ],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "max_C": {
+      "shape": [
+        3067
+      ],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "max_r": {
+      "shape": [
+        3067
+      ],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "mean_C": {
+      "shape": [
+        3067
+      ],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "moisture": {
+      "shape": [
+        3067,
+        101
+      ],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "moisture_ref": {
+      "shape": [
+        3067,
+        101
+      ],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "radii": {
+      "shape": [
+        101
+      ],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "radius_data": {
+      "shape": [
+        145,
+        2
+      ],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "radius_m": {
+      "shape": [
+        3067
+      ],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "radius_slopes": {
+      "shape": [
+        145
+      ],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "reference_physical_radii": {
+      "shape": [
+        3067,
+        101
+      ],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "reference_radii": {
+      "shape": [
+        101
+      ],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "surface_moisture": {
+      "shape": [
+        3067
+      ],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "surface_temperature_K": {
+      "shape": [
+        3067
+      ],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "temperature_K": {
+      "shape": [
+        3067,
+        101
+      ],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "temperature_ref_K": {
+      "shape": [
+        3067,
+        101
+      ],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "times": {
+      "shape": [
+        3067
+      ],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "valid_mask": {
+      "shape": [
+        3067,
+        101
+      ],
+      "dtype": "bool",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "volumes": {
+      "shape": [
+        1280
+      ],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "water_balance": {
+      "shape": [
+        3067
+      ],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    },
+    "xi": {
+      "shape": [
+        101
+      ],
+      "dtype": "float64",
+      "array_equal_including_nan": true,
+      "maximum_finite_difference": 0.0,
+      "nan_masks_identical": true
+    }
+  },
+  "all_equal_including_nan": true
+}

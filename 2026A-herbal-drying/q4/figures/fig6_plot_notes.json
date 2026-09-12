@@ -1,0 +1,11 @@
+{
+  "figure": "fig6_q4_radius_mapping",
+  "radius_observations": 145,
+  "input_last_time_s": 259200.0,
+  "input_last_radius_m": 0.01198,
+  "notes": [
+    "全部观测点与求解器采用的同一PCHIP函数；没有另行拟合半径。",
+    "橙线为实际表面，蓝色虚线对应固定材料坐标xi=0.25、0.5、0.75。",
+    "三个完整面板共用0至附件末时刻的小时尺度，不再嵌入小字局部窗。"
+  ]
+}

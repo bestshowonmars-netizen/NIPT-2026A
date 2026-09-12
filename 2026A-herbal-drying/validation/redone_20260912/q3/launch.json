@@ -1,0 +1,17 @@
+{
+  "started_at_utc": "2026-09-12T12:23:03.961224+00:00",
+  "recompute": true,
+  "source": "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\q2\\solution.npz",
+  "source_final_state": "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\q2\\final_state.npz",
+  "output": "E:\\app\\codex\\课外\\NIPT-2026A\\2026A-herbal-drying\\validation\\redone_20260912\\q3\\solution.npz",
+  "cells": 960,
+  "dt_max_s": 0.03125,
+  "event_dt_s": 0.03125,
+  "event_tolerance_s": 0.01,
+  "retained_sha256_before": {
+    "q2\\solution.npz": "5c9e894fe77b124467c4c4e5c84300531b7355103369a3b0c70bc78d72958cb9",
+    "q2\\final_state.npz": "444ecffcd5e1ef45b9987693c3703f89bbc50c1f25469cf7877c950f61838720",
+    "q3\\solution.npz": "123b01ae4eb8fe7914ca4dafe3a706c1d48daf4cca6964d9bb2860a72a1c24dd",
+    "submission_results\\result3.xlsx": "f0d9f9bfc433a2d1a9b759ffdf3a067d1a441f9ccae100f3545c95894e0065ac"
+  }
+}

@@ -234,6 +234,8 @@ def analyze(solution, output_dir, template_path=None, result_path=None, plots=Tr
         writer.writerow([finish, finish / 3600, "endpoint", float(radius[-1] * 100)]
                         + [_concentration_text(solution["moisture"][-1, j], mask[-1, j]) for j in columns]
                         + [_concentration_text(solution["surface_moisture"][-1])])
+    from common.drying_result_notes import write_short_note
+    write_short_note(solution, folder, comparison_solutions)
     if plots:
         figure6(solution["radius_data"], solution["radius_slopes"], figures)
         figure7(solution, figures, comparison_solutions)

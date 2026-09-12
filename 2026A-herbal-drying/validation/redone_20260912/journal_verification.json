@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "questions": {
+    "3": {
+      "passed": true,
+      "start_s": 10800.0,
+      "stop_s": 10860.0,
+      "actual_block_replayed": true,
+      "fresh_original_kernel_comparison": {
+        "T": 0.0,
+        "C": 0.0,
+        "diagnostics": 0.0
+      }
+    },
+    "4": {
+      "passed": true,
+      "start_s": 0.0,
+      "stop_s": 60.0,
+      "actual_block_replayed": true,
+      "fresh_original_kernel_comparison": {
+        "T": 0.0,
+        "C": 0.0,
+        "diagnostics": 0.0
+      }
+    }
+  }
+}

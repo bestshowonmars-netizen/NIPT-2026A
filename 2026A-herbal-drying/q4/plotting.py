@@ -1,5 +1,6 @@
 """Q4 input geometry and solved moving-domain figures; no synthetic solution data."""
 from pathlib import Path
+import json
 
 import bootstrap
 import numpy as np
@@ -20,66 +21,58 @@ def _radius_curve(times, data, slopes):
 def figure6(radius_data, radius_slopes, folder):
     """Plot all radius observations and the exact callable used by the solver."""
     setup()
+    plt.rcParams.update({"font.size": 10, "axes.labelsize": 10,
+                         "xtick.labelsize": 9, "ytick.labelsize": 9})
     data = np.asarray(radius_data, dtype=float)
     slopes = np.asarray(radius_slopes, dtype=float)
     if data.ndim != 2 or data.shape[1] != 2 or slopes.shape != (len(data),):
         raise ValueError("Figure 6 requires radius observations in seconds/metres and their solver PCHIP slopes.")
     fine = np.unique(np.r_[np.linspace(data[0, 0], data[-1, 0], 1801), data[:, 0]])
     hours, radius_cm = fine / 3600, _radius_curve(fine, data, slopes) * 100
-    fig = plt.figure(figsize=(6.6, 4.6), layout="constrained")
-    layout = fig.add_gridspec(1, 2, width_ratios=[1.03, 1])
-    ax = fig.add_subplot(layout[0])
-    right = layout[1].subgridspec(2, 1)
-    physical = fig.add_subplot(right[0])
-    reference = fig.add_subplot(right[1], sharex=physical)
+    fig, (ax, physical, reference) = plt.subplots(1, 3, figsize=(8.6, 3.3), layout="constrained")
 
     ax.scatter(data[:, 0] / 3600, data[:, 1] * 100, color=GRAY, s=10,
-               alpha=.7, zorder=2, label=f"附件2观测（{len(data)}点）")
-    ax.plot(hours, radius_cm, color=GREEN, lw=1.4, label="模型采用的PCHIP插值", zorder=3)
-    ax.set(title="(a) 收缩半径输入", xlabel="时间 / h", ylabel="药材半径 / cm")
+               alpha=.6, zorder=2, label=f"观测（{len(data)}点）")
+    ax.plot(hours, radius_cm, color=BLUE, lw=1.6, label="PCHIP插值", zorder=3)
+    ax.set(xlabel="时间 / h", ylabel="药材半径 / cm")
+    ax.set_title("(a) 半径输入", loc="left", fontsize=10)
     ax.set_xlim(hours[0], hours[-1])
     ax.set_ylim(float(data[:, 1].min() * 100) - .055, float(data[:, 1].max() * 100) + .055)
     ax.set_xticks([0, 24, 48, 72])
     ax.grid(True)
-    ax.legend(loc="center", bbox_to_anchor=(.62, .37), fontsize=7, frameon=False)
-    ax.annotate(f"72 h：{data[-1, 1] * 100:.3f} cm", xy=(hours[-1], radius_cm[-1]),
-                xytext=(.49, .25), textcoords="axes fraction", fontsize=7.5,
-                arrowprops={"arrowstyle": "->", "color": GRAY, "lw": .7})
-    early = ax.inset_axes([.42, .52, .55, .41])
-    early_mask = fine <= 6 * 3600
-    observed_early = data[:, 0] <= 6 * 3600
-    early.scatter(data[observed_early, 0] / 3600, data[observed_early, 1] * 100,
-                  s=9, color=GRAY, alpha=.75)
-    early.plot(hours[early_mask], radius_cm[early_mask], color=GREEN, lw=1.1)
-    early.set_xlim(0, 6)
-    early.set_title("前6小时", fontsize=7.5, pad=3)
-    early.set_xlabel("时间 / h", fontsize=7, labelpad=1)
-    early.set_ylabel("半径 / cm", fontsize=7, labelpad=1)
-    early.set_xticks([0, 3, 6])
-    early.tick_params(labelsize=6.5, pad=1)
-    early.grid(True, alpha=.7)
+    ax.legend(loc="upper right", fontsize=9, frameon=False)
+    ax.annotate(f"末值 {data[-1, 1] * 100:.3f} cm", xy=(hours[-1], radius_cm[-1]),
+                xytext=(.48, .23), textcoords="axes fraction", fontsize=9, ha="center",
+                arrowprops={"arrowstyle": "->", "color": GRAY, "lw": .8})
 
     physical.fill_between(hours, 0, radius_cm, color="#E7EEF4")
-    physical.plot(hours, radius_cm, color=GREEN, lw=1.4)
+    physical.plot(hours, radius_cm, color=ORANGE, lw=1.6, label=r"表面 $r=R(t)$")
     for xi in (.25, .5, .75):
-        physical.plot(hours, radius_cm * xi, color=BLUE, lw=.75, ls=":")
-    physical.set(title="(b) 移动物理区域", ylabel="实际半径 r / cm", ylim=(0, 2.05))
-    physical.text(.53, .91, r"$r=R(t)$", transform=physical.transAxes, color=GREEN, fontsize=8)
-    physical.text(.48, .41, r"$r=\xi R(t)$", transform=physical.transAxes, fontsize=9,
-                  bbox={"facecolor": "#E7EEF4", "alpha": .9, "edgecolor": "none", "pad": 1})
-    physical.tick_params(labelbottom=False)
+        physical.plot(hours, radius_cm * xi, color=BLUE, lw=1.0, ls=":")
+    physical.set(xlabel="时间 / h", ylabel="实际半径 r / cm", ylim=(0, 2.1), xlim=(hours[0], hours[-1]))
+    physical.set_title("(b) 物理坐标", loc="left", fontsize=10)
+    physical.text(.55, .79, r"$r=\xi R(t)$", transform=physical.transAxes, fontsize=11, ha="center")
     reference.fill_between(hours, 0, 1, color="#E7EEF4")
     for xi in (.25, .5, .75):
-        reference.axhline(xi, color=BLUE, lw=.75, ls=":")
-    reference.axhline(1, color=GREEN, lw=1.4)
-    reference.set(title="(c) 固定参考区域", xlabel="时间 / h", ylabel=r"归一化半径 $\xi=r/R(t)$",
-                  xlim=(hours[0], hours[-1]), ylim=(0, 1.03))
-    reference.text(.51, .44, "同比径向收缩\n固定ξ随材料运动", transform=reference.transAxes,
-                   ha="center", fontsize=7.5, bbox={"facecolor": "white", "alpha": .9, "edgecolor": "none"})
+        reference.axhline(xi, color=BLUE, lw=1.0, ls=":")
+    reference.axhline(1, color=ORANGE, lw=1.6)
+    reference.set(xlabel="时间 / h", ylabel=r"材料坐标 $\xi=r/R(t)$",
+                  xlim=(hours[0], hours[-1]), ylim=(0, 1.05))
+    reference.set_title("(c) 材料坐标", loc="left", fontsize=10)
+    reference.text(.51, .61, r"固定 $\xi$ 随材料运动", transform=reference.transAxes,
+                   ha="center", fontsize=9, bbox={"facecolor": "white", "alpha": .9, "edgecolor": "none"})
+    physical.set_yticks([0, .5, 1, 1.5, 2])
+    reference.set_yticks([0, .25, .5, .75, 1])
     for current in (physical, reference):
         current.set_xticks([0, 24, 48, 72])
         current.grid(True, alpha=.7)
     save(fig, folder, "fig6_q4_radius_mapping")
+    notes = {"figure": "fig6_q4_radius_mapping", "radius_observations": len(data),
+             "input_last_time_s": float(data[-1, 0]), "input_last_radius_m": float(data[-1, 1]),
+             "notes": ["全部观测点与求解器采用的同一PCHIP函数；没有另行拟合半径。",
+                       "橙线为实际表面，蓝色虚线对应固定材料坐标xi=0.25、0.5、0.75。",
+                       "三个完整面板共用0至附件末时刻的小时尺度，不再嵌入小字局部窗。"]}
+    (Path(folder) / "fig6_plot_notes.json").write_text(json.dumps(notes, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
 def _model_series(solution, comparisons):
@@ -96,6 +89,8 @@ def _model_series(solution, comparisons):
 def figure7(solution, folder, comparison_solutions=None):
     """Show only saved fields inside the moving domain and actual stopping evidence."""
     setup()
+    plt.rcParams.update({"font.size": 10, "axes.labelsize": 10,
+                         "xtick.labelsize": 9, "ytick.labelsize": 9})
     times = np.asarray(solution["times"], dtype=float)
     xi = np.asarray(solution["xi"], dtype=float)
     radius = np.asarray(solution["radius_m"], dtype=float)
@@ -118,8 +113,8 @@ def figure7(solution, folder, comparison_solutions=None):
     low, high = float(values.min()) < vmin, float(values.max()) > vmax
     extend = "both" if low and high else "min" if low else "max" if high else "neither"
 
-    fig, (field, criterion) = plt.subplots(2, 1, figsize=(6.6, 6.4), layout="constrained",
-                                         gridspec_kw={"height_ratios": [1, 1.1]})
+    fig, (field, criterion) = plt.subplots(2, 1, figsize=(7.0, 6.1), layout="constrained",
+                                         gridspec_kw={"height_ratios": [1, 1]})
     display = np.unique(np.linspace(0, len(times) - 1, min(len(times), 1800)).astype(int))
     shown_h = times[display] / 3600
     shown_r = physical_radii[display].T * 100
@@ -129,26 +124,27 @@ def figure7(solution, folder, comparison_solutions=None):
     mesh = field.pcolormesh(shown_x, shown_r, shown_c, shading="gouraud", cmap="Blues",
                            vmin=vmin, vmax=vmax, rasterized=True)
     bar = fig.colorbar(mesh, ax=field, pad=.017, aspect=29, extend=extend)
-    bar.set_label("干基含水率 / (kg/kg)", fontsize=8)
-    bar.ax.tick_params(labelsize=7)
-    field.fill_between(times / 3600, radius * 100, 2, color="#F2F3F4", zorder=2)
+    bar.set_label("干基含水率 / (kg/kg)", fontsize=9)
+    bar.ax.tick_params(labelsize=8.5)
+    # Clip any display quadrilateral interpolation back to the actual saved surface.
+    field.fill_between(times / 3600, radius * 100, 2, color="white", zorder=2)
     field.plot(times / 3600, radius * 100, color="#222222", lw=1.3, zorder=4,
                label=r"实际表面 $r=R(t)$")
-    field.text(.58, .88, "材料域外", transform=field.transAxes, color="#727A80", fontsize=8,
-               bbox={"facecolor": "#F2F3F4", "edgecolor": "none", "pad": 1})
     if float(shown_c.min()) < threshold < float(shown_c.max()):
         contour = field.contour(shown_x, shown_r, shown_c, levels=[threshold], colors="black", linewidths=1.15)
         contour.set_path_effects([pe.Stroke(linewidth=2.8, foreground="white"), pe.Normal()])
-        field.clabel(contour, inline=True, fontsize=7.5, fmt={threshold: "C=0.15"})
+        field.clabel(contour, inline=True, fontsize=9, fmt={threshold: f"C={threshold:g}"},
+                     manual=[(.66 * finish / 3600, float(radius[0]) * 50)])
     field.scatter([finish / 3600], [float(solution["max_r"][-1]) * 100], marker="*", s=60,
                   color=ORANGE, edgecolor="white", lw=.6, zorder=5, clip_on=False)
-    field.set(xlim=(0, finish / 3600), ylim=(0, 2), ylabel="实际半径 r / cm", xlabel="从题设初态起的时间 / h")
+    field.set(xlim=(0, finish / 3600), ylim=(0, 2), ylabel="实际半径 r / cm", xlabel="时间 / h")
     field.set_yticks([0, .5, 1, 1.5, 2])
     field.xaxis.set_major_locator(MaxNLocator(7))
-    field.set_title(f"(a) 移动区域内的含水率场；终点 {finish / 3600:.4f} h", loc="left", fontsize=9)
-    field.legend(loc="upper right", frameon=False, fontsize=7.5)
+    field.set_title("(a) 收缩域含水率", loc="left", fontsize=10)
+    field.legend(loc="upper right", frameon=False, fontsize=9)
 
     finishes = []
+    model_notes = []
     for label, result, color, style in records:
         t = np.asarray(result["times"], dtype=float)
         maximum = np.asarray(result["max_C"], dtype=float)
@@ -157,45 +153,26 @@ def figure7(solution, folder, comparison_solutions=None):
             raise ValueError("Every compared model needs its saved full-grid maximum and endpoint.")
         # Q3 deliberately retains NaNs before 3 h; these are never interpolated away.
         decimals = 3 if result["metadata"].get("shrinking") is False else 4
-        criterion.plot(t / 3600, maximum, color=color, ls=style, lw=1.4,
+        criterion.plot(t / 3600, maximum, color=color, ls=style, lw=1.7,
                        label=f"{label}（{ending / 3600:.{decimals}f} h）")
         criterion.scatter([ending / 3600], [maximum[-1]], color=color, edgecolor="white",
-                          s=29, lw=.65, zorder=4, marker="o" if style != "-" else "*")
+                          s=38, lw=.65, zorder=4, marker="o" if style != "-" else "*")
+        criterion.plot([ending / 3600] * 2, [0, maximum[-1]], color=color, ls=":", lw=.9)
         finishes.append(ending)
-    criterion.axhline(threshold, color=RED, ls="--", lw=1, label="严格达标：M < 0.15 kg/kg")
+        model_notes.append({"model": label, "finish_time_s": ending,
+                            "maximum_first_available_time_s": float(t[np.flatnonzero(np.isfinite(maximum))[0]]),
+                            "terminal_max_C": float(maximum[-1])})
+    criterion.axhline(threshold, color=RED, ls="--", lw=1.15, label=rf"阈值 ${threshold:g}$ kg/kg")
     criterion.set(xlim=(0, max(finishes) / 3600 * 1.015), ylim=(0, 2.75),
-                  xlabel="从题设初态起的时间 / h", ylabel="全域最大干基含水率 / (kg/kg)")
+                  xlabel="时间 / h", ylabel="全域最大干基含水率 / (kg/kg)")
     criterion.grid(True)
-    criterion.set_title("(b) 三组模型的全域干燥判据" if len(records) == 3 else "(b) 已有模型的全域干燥判据",
-                        loc="left", fontsize=9)
-    criterion.legend(loc="upper right", frameon=False, fontsize=7)
-    if comparisons.get("q3") is not None:
-        criterion.text(.015, .96, "问题3：展示3 h后的续算结果", transform=criterion.transAxes,
-                       fontsize=7, color=GRAY, va="top")
-    ordered_finishes = sorted(finishes)
-    if len(finishes) >= 3 and max(finishes) > 1.5 * min(finishes):
-        split = int(np.argmax(np.diff(ordered_finishes))) + 1
-        windows = [([.40, .36, .25, .32], ordered_finishes[:split], "较早终点附近"),
-                   ([.71, .36, .25, .32], ordered_finishes[split:], "较晚终点附近")]
-    else:
-        windows = [([.50, .28, .47, .38], ordered_finishes, "阈值附近：实际时间")]
-    for rectangle, local_finishes, title in windows:
-        inset = criterion.inset_axes(rectangle)
-        inset.axhline(threshold, color=RED, lw=.8, ls="--")
-        for _, result, color, style in records:
-            inset.plot(np.asarray(result["times"]) / 3600, result["max_C"], color=color, ls=style, lw=1)
-            ending = float(result["metadata"]["finish_time_s"])
-            inset.scatter([ending / 3600], [result["max_C"][-1]], s=16, color=color, zorder=4)
-            trial = np.asarray(result.get("event_trace", []), dtype=float)
-            if trial.ndim == 2 and trial.shape[1] == 4:
-                inset.scatter(trial[:, 0] / 3600, trial[:, 1], s=4, color=color, alpha=.5, zorder=3)
-        inset.set_xlim(min(local_finishes) / 3600 * .96, max(local_finishes) / 3600 * 1.01)
-        inset.set_ylim(.145, .19)
-        inset.set_title(title, fontsize=7.2, pad=3)
-        inset.set_xlabel("时间 / h", fontsize=6.7, labelpad=1)
-        inset.set_ylabel("最大含水率", fontsize=6.7, labelpad=1)
-        inset.tick_params(labelsize=6.3, pad=1)
-        inset.xaxis.set_major_locator(MaxNLocator(3))
-        inset.yaxis.set_major_locator(MaxNLocator(3))
-        inset.grid(True, alpha=.7)
+    criterion.set_title("(b) 全域达标对照", loc="left", fontsize=10)
+    criterion.legend(loc="upper right", frameon=False, fontsize=9)
     save(fig, Path(folder), "fig7_q4_shrinking_comparison")
+    notes = {"figure": "fig7_q4_shrinking_comparison", "models": model_notes,
+             "notes": ["各曲线只连接已有全域最大值，问题3前3小时原生最大值未保存，保持NaN空白。",
+                       "热图用完整材料参考场映射至实际半径；实际表面之外留白，不填零或表面值。",
+                       "三组终点均取保存的未舍入全域严格判据，图例显示值仅用于阅读。",
+                       "收缩效应只比较附录4同物性的固定半径组与收缩组。问题3与问题4同时改变物性，不能全归因于收缩。",
+                       "图中已移除局部小插图；完整事件轨迹仍保存在原始数值结果。"]}
+    (Path(folder) / "fig7_plot_notes.json").write_text(json.dumps(notes, ensure_ascii=False, indent=2), encoding="utf-8")

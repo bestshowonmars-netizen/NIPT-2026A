@@ -1,0 +1,40 @@
+{
+  "status": "computed_pending_checks",
+  "started_utc": "2026-09-12T12:23:04.098400+00:00",
+  "parameters": {
+    "cells": 1280,
+    "dt_max": 0.03125,
+    "dt_scale": 0.0013020833333333333,
+    "time_growth": 600.0,
+    "event_dt": 0.03125,
+    "event_tol": 0.01,
+    "shrinking": true,
+    "recompute": true,
+    "progress": true
+  },
+  "output_path": "validation/redone_20260912/q4/solution.npz",
+  "initialization": "Fresh Appendix 4 uniform initial fields at absolute t=0; no Q2/Q3 seed",
+  "frozen_inputs_and_original_outputs_sha256": {
+    "data/attachment1.xlsx": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+    "data/attachment2.xlsx": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+    "common/solver.py": "c530db8008cfe4cd4a973f520bed46f00ee9e33cf3c782cb66a887318608f3ef",
+    "common/finite_volume.py": "a26f1558d996008261979f55eeb4e38ba84f57fc5c90a990cb09715823bb718b",
+    "common/material_properties.py": "8ae076610b5af73c7fe25fd78fb0d57f16c946c3661838de1c514b577689f691",
+    "common/boundary_conditions.py": "c04a1674abdbe508b4820e149f782ecce1d856a0d11e1a7f0d785aa373ddd24a",
+    "common/interpolation.py": "1bcc685388ace0ae78a92d672ec4b7f23f7c849bcc4ce90802dde048fc13a76d",
+    "common/data_loader.py": "fd8fbd7ca01e02b3dfaf3fae6ee4fa8a59185399e8e330717e01a64f8888d564",
+    "q4/config.py": "01f33c43d9ab8fdaac830c546f064599686a4f0c6d5c746ab668f12662d98434",
+    "q4/kernel.py": "d648f1434107cf1af4683397714366c8d93a9ac1722e704d0db9aac61863174f",
+    "q4/shrinking_radius.py": "10f3e801544885cd8853020d2645a4663124d55b66074d45d0f43be8f90824a5",
+    "q4/end_time_detector.py": "d9b68e33714259d31729925a2c0145514cc9b2e2f3f59b13de118f33a1f066b7",
+    "q4/solve_q4.py": "fd8bcb3ae8539e24fbb2e53de37e94bc770cee401f6a7fa6e86441cee271c3ad",
+    "q4/solution.npz": "33f1192de2ea75440667f2c616b7134c388f0829c62673fb94f59b0ae8dd6ce2",
+    "q4/solution.json": "a789142229187ebefaab6686b219f1a9fd9ffad50b61993702f0060946985e39",
+    "q4/fixed_control.npz": "7cbb488fb4bd7231b2f750afd6f10499c997f48650824f774858c555050877e5",
+    "q4/fixed_control.json": "4240a1d54c7008b0b84904f913d8927bf3eeadd29052bcf4aa76d9fb86dcaa29",
+    "validation/q4_selected_config.json": "c858baaf6e3440239cc04afc898bbacd29f7ddbab0ad42c461238bfe15b2562b"
+  },
+  "completed_utc": "2026-09-12T15:27:22.066632+00:00",
+  "finish_time_s": 183913.49853515625,
+  "fresh_solution_sha256": "40f9aebad8fec5b64a6f27b687780d316572b986ed9f6ac1d3f3705fd504b8d3"
+}

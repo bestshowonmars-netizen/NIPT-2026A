@@ -22,3 +22,10 @@ Thumbs.db
 !.env.example
 *.pem
 *.key
+
+# Local execution traces from the Q3/Q4 recomputation; completed evidence stays tracked.
+2026A-herbal-drying/validation/redone_20260912/**/*.log
+2026A-herbal-drying/validation/redone_20260912/**/interrupted_attempt_*/
+2026A-herbal-drying/validation/redone_20260912/**/scratch/
+2026A-herbal-drying/validation/redone_20260912/**/journal_status.json
+2026A-herbal-drying/validation/redone_20260912/q3/restart_state.npz

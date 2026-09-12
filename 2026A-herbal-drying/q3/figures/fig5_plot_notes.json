@@ -1,0 +1,18 @@
+{
+  "figure": "fig5_q3_drying_endpoint",
+  "finish_time_s": 206900.44921875,
+  "maximum_first_available_time_s": 10800.0,
+  "mean_threshold_saved_minute_bracket": {
+    "t_minus_s": 129660.0,
+    "t_plus_s": 129720.0,
+    "mean_minus": 0.15001546192877646,
+    "mean_plus": 0.14998359659343025,
+    "interpretation": "Saved 60-second bracket only; no precise mean-threshold root was computed."
+  },
+  "notes": [
+    "前3小时未保存原生网格最大值；最大值及其位置曲线保持为空，不以采样最大值补造。",
+    "平均值低于阈值不能证明所有位置达标；全域严格达标只使用未舍入的最大值。",
+    "均值标注仅为相邻60秒保存时刻的阈值夹区，未求解或插值生成精确均值达标时刻。",
+    "事件试算保留在原始结果event_trace，主图使用小时尺度，不嵌入10^-7量级含水率差的小插图。"
+  ]
+}
